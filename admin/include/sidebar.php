@@ -11,14 +11,20 @@
     <!--navigation-->
     <ul class="metismenu" id="menu">
         <li>
-            <a href="index.php" class="">
+            <a href="index.php" class="active">
                 <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
                 <div class="menu-title">Dashboard</div>
             </a>
         </li>
         <li>
+            <a href="all-category.php" class="">
+                <div class="parent-icon"><i class="bx bx-cart"></i></div>
+                <div class="menu-title">All Category</div>
+            </a>
+        </li>
+        <li>
             <a href="add-category.php" class="">
-                <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
+                <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
                 <div class="menu-title">Add Category</div>
             </a>
         </li>
@@ -26,3 +32,4 @@
     <!--end navigation-->
 </div>
 <!--end sidebar wrapper -->
+
