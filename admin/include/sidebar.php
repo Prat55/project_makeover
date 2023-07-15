@@ -11,9 +11,15 @@
     <!--navigation-->
     <ul class="metismenu" id="menu">
         <li>
-            <a href="javascript:;" class="">
+            <a href="index.php" class="">
                 <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
                 <div class="menu-title">Dashboard</div>
+            </a>
+        </li>
+        <li>
+            <a href="add-category.php" class="">
+                <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
+                <div class="menu-title">Add Category</div>
             </a>
         </li>
     </ul>

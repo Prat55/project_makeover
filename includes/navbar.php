@@ -17,10 +17,13 @@
                 <div class="collapse navbar-collapse" id="main_nav">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link active" href="index.php">Home</a>
+
+                            <a class="nav-link active" href="
+                                index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.php">About Us</a>
+                            <a class="nav-link" href="about.php">About
+                                Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="service.php">Services</a>
