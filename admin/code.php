@@ -1,92 +1,35 @@
 <?php
-    session_start();
     include('../config/dbcon.php');
     include('../functions/myfunction.php');
 
+    // * Adding Data in 1st Category
     if(isset($_POST['add_category1_btn'])){
-        $service = $_POST['service'];
-        $price = $_POST['price'];
-
-        if($service == ""){
-            echo "<script>alert('Service is required');</script>";
-        }
-        else if($price == ""){
-            echo "<script>alert('Price is required');</script>";
-        }
-        else{
-            $cate_query = "INSERT INTO `category1`(`service`, `price`) VALUES ('$service','$price')";
-            $cate_query_run = mysqli_query($con, $cate_query);
-
-            if($cate_query_run){
-                redirect("add-category.php", "Category Added Successfully");
-            }
-            else{
-                redirect("add-category.php", "Something Went Wrong!");
-            }
-        }
-    }else if(isset($_POST['add_category2_btn'])){
-        $service = $_POST['service'];
-        $price = $_POST['price'];
-
-        if($service == ""){
-            echo "<script>alert('Service is required');</script>";
-        }
-        else if($price == ""){
-            echo "<script>alert('Price is required');</script>";
-        }
-        else{
-            $cate_query = "INSERT INTO `category2`(`service`, `price`) VALUES ('$service','$price')";
-            $cate_query_run = mysqli_query($con, $cate_query);
-
-            if($cate_query_run){
-                redirect("add-category.php", "Category Added Successfully");
-            }
-            else{
-                redirect("add-category.php", "Something Went Wrong!");
-            }
-        }
-    }else if(isset($_POST['add_category3_btn'])){
-        $service = $_POST['service'];
-        $price = $_POST['price'];
-
-        if($service == ""){
-            echo "<script>alert('Service is required');</script>";
-        }
-        else if($price == ""){
-            echo "<script>alert('Price is required');</script>";
-        }
-        else{
-            $cate_query = "INSERT INTO `category3`(`service`, `price`) VALUES ('$service','$price')";
-            $cate_query_run = mysqli_query($con, $cate_query);
-
-            if($cate_query_run){
-                redirect("add-category.php", "Category Added Successfully");
-            }
-            else{
-                redirect("add-category.php", "Something Went Wrong!");
-            }
-        }
-    }else if(isset($_POST['add_category4_btn'])){
-        $service = $_POST['service'];
-        $price = $_POST['price'];
-
-        if($service == ""){
-            echo "<script>alert('Service is required');</script>";
-        }
-        else if($price == ""){
-            echo "<script>alert('Price is required');</script>";
-        }
-        else{
-            $cate_query = "INSERT INTO `category4`(`service`, `price`) VALUES ('$service','$price')";
-            $cate_query_run = mysqli_query($con, $cate_query);
-
-            if($cate_query_run){
-                redirect("add-category.php", "Category Added Successfully");
-            }
-            else{
-                redirect("add-category.php", "Something Went Wrong!");
-            }
-        }
+        addCategory("category1");
+    }
+    // * Adding Data in 2nd Category
+    else if(isset($_POST['add_category2_btn'])){
+        addCategory("category2");
+    }
+    // * Adding Data in 3rd Category
+    else if(isset($_POST['add_category3_btn'])){
+        addCategory("category3");
+    }
+    // * Adding Data in 4st Category
+    else if(isset($_POST['add_category4_btn'])){
+        addCategory("category4");
+    }
+    // * Update data in category tables
+    else if(isset($_POST['update_category_btn1'])){
+        updateCategory("category1");
+    }
+    else if(isset($_POST['update_category_btn2'])){
+        updateCategory("category2");
+    }
+    else if(isset($_POST['update_category_btn3'])){
+        updateCategory("category3");
+    }
+    else if(isset($_POST['update_category_btn4'])){
+        updateCategory("category4");
     }
 
 ?>

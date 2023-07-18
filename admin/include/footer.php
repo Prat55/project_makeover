@@ -11,6 +11,9 @@
     </div>
     <!--end wrapper-->
 
+    <!-- Jquery Cdn -->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+   
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!--plugins-->
@@ -43,6 +46,10 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" 
         referrerpolicy="no-referrer">
     </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

@@ -27,7 +27,7 @@
                         <ul>
                             <h2>Eyebrow and Forehead</h2>
                             <li>
-                                <p>Eyebrow</p>
+                                <p><?=  ?></p>
                                 <span>Rs 30</span>
                             </li>
                             <li>

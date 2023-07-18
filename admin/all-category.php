@@ -1,11 +1,22 @@
 <?php 
-include('include/header.php');
+
 include('../middleware/adminMiddleware.php');
+include('include/header.php');
 ?>
 <!--start page wrapper -->
 <div class="page-wrapper">
     <div class="page-content">
         <div class="row">
+        <?php if (isset($_SESSION['message'])) { ?>
+            <div class="alert alert-success alert-dismissible fade show">
+                <strong>Hey!</strong>
+                <strong><?= $_SESSION['message']; ?>.</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        <?php
+            unset($_SESSION['message']);
+        }
+        ?>
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -17,9 +28,11 @@ include('../middleware/adminMiddleware.php');
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
+                                    <th>Sr. No</th>
                                     <th>Service</th>
                                     <th>Price</th>
                                     <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -30,9 +43,22 @@ include('../middleware/adminMiddleware.php');
                                         foreach($category1 as $item1) {
                                             ?>
                                                 <tr>
+                                                    <td><?= $item1['id']; ?></td>
                                                     <td><?= $item1['service']; ?></td>
                                                     <td>Rs. <?= $item1['price']; ?></td>
-                                                    <td><a href="edit-category.php" class="btn btn-primary">Edit</a></td>
+                                                    <td>
+                                                        <a href="edit-category.php?id=<?= $item1['id']; ?>&service=<?= $item1['service']; ?>" class="btn btn-primary">
+                                                            Edit
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="delete-category.php?id=<?= $item1['id']; ?>&service=<?= $item1['service']; ?>&price=<?= $item1['price']; ?>&table=category1" class="btn btn-sm btn-danger">
+                                                            Delete
+                                                        </a>
+                                                        <!-- <button type="submit" class = "btn btn-sm btn-danger delete_product_btn1" name="delete_product_btn1">
+                                                            Delete
+                                                        </button> -->
+                                                    </td>
                                                 </tr>
                                             <?php
                                         }
@@ -51,9 +77,11 @@ include('../middleware/adminMiddleware.php');
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
+                                    <th>Sr. No</th>
                                     <th>Service</th>
                                     <th>Price</th>
                                     <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -65,9 +93,19 @@ include('../middleware/adminMiddleware.php');
                                         foreach($category2 as $item2) {
                                             ?>
                                                 <tr>
+                                                    <td><?= $item2['id']; ?></td>
                                                     <td><?= $item2['service']; ?></td>
                                                     <td>Rs. <?= $item2['price']; ?></td>
-                                                    <td><a href="" class="btn btn-primary">Edit</a></td>
+                                                    <td>
+                                                        <a href="edit-category.php?id=<?= $item2['id']; ?>&service=<?= $item2['service']; ?>" class="btn btn-primary">
+                                                        Edit
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="delete-category.php?id=<?= $item2['id']; ?>&service=<?= $item2['service']; ?>&price=<?= $item2['price']; ?>&table=category2" class="btn btn-sm btn-danger">
+                                                            Delete
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                             <?php
                                         }
@@ -86,9 +124,11 @@ include('../middleware/adminMiddleware.php');
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
+                                    <th>Sr. No</th>
                                     <th>Service</th>
                                     <th>Price</th>
                                     <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -99,9 +139,17 @@ include('../middleware/adminMiddleware.php');
                                         foreach($category3 as $item3) {
                                             ?>
                                                 <tr>
+                                                    <td><?= $item3['id']; ?></td>
                                                     <td><?= $item3['service']; ?></td>
                                                     <td>Rs. <?= $item3['price']; ?></td>
-                                                    <td><a href="" class="btn btn-primary">Edit</a></td>
+                                                    <td>
+                                                        <a href="edit-category.php?id=<?= $item3['id']; ?>&service=<?= $item3['service']; ?>" class="btn btn-primary">Edit</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="delete-category.php?id=<?= $item3['id']; ?>&service=<?= $item3['service']; ?>&price=<?= $item3['price']; ?>&table=category3" class="btn btn-sm btn-danger">
+                                                            Delete
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                             <?php
                                         }
@@ -119,9 +167,11 @@ include('../middleware/adminMiddleware.php');
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
+                                    <th>Sr. No</th>
                                     <th>Service</th>
                                     <th>Price</th>
                                     <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -132,9 +182,17 @@ include('../middleware/adminMiddleware.php');
                                         foreach($category4 as $item4) {
                                             ?>
                                                 <tr>
+                                                    <td><?= $item4['id']; ?></td>
                                                     <td><?= $item4['service']; ?></td>
                                                     <td>Rs. <?= $item4['price']; ?></td>
-                                                    <td><a href="" class="btn btn-primary">Edit</a></td>
+                                                    <td>
+                                                        <a href="edit-category.php?id=<?= $item4['id']; ?>&service=<?= $item4['service']; ?>" class="btn btn-primary">Edit</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="delete-category.php?id=<?= $item4['id']; ?>&service=<?= $item4['service']; ?>&price=<?= $item4['price']; ?>&table=category4" class="btn btn-sm btn-danger">
+                                                            Delete
+                                                        </a>
+                                                    </td>
                                                 </tr>
                                             <?php
                                         }

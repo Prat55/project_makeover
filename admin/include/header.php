@@ -28,7 +28,7 @@
     <style>
         .bg-green{
             background-color: #198754;
-            color: white;
+            color: #fff;
         }
     </style>
 </head>
