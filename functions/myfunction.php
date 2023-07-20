@@ -17,7 +17,7 @@ function getAllImages($table){
 }
 
 // help to match specific service row from table
-function getByService($table, $id, $service,){
+function getByService($table, $id, $service){
     global $con;
     $query = "SELECT * FROM `$table` WHERE id = '$id' AND service = '$service'";
     return $query_run = mysqli_query($con, $query);
