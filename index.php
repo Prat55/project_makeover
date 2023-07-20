@@ -166,7 +166,7 @@ include('functions/userfunction.php');
                 <div class="col-md-5 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-facial-mask"></i>
+                            <img src="assets/img/services/certified.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
@@ -189,7 +189,7 @@ include('functions/userfunction.php');
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-eye"></i>
+                             <img src="assets/img/services/bride.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
@@ -213,7 +213,7 @@ include('functions/userfunction.php');
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-brushes"></i>
+                            <img src="assets/img/services/fashion.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
@@ -237,7 +237,7 @@ include('functions/userfunction.php');
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-brushes"></i>
+                            <img src="assets/img/services/nail-art.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
@@ -258,7 +258,7 @@ include('functions/userfunction.php');
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-scissors"></i>
+                            <img src="assets/img/services/styling.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
@@ -279,7 +279,7 @@ include('functions/userfunction.php');
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-brushes"></i>
+                            <img src="assets/img/services/eye-makeup.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
@@ -445,7 +445,7 @@ include('functions/userfunction.php');
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-blush-1"></i>
+                             <img src="assets/img/services/check-list.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="100" data-speed="3000">100</span>
@@ -456,7 +456,7 @@ include('functions/userfunction.php');
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-makeup"></i>
+                             <img src="assets/img/services/happy.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="200" data-speed="3000">200</span>
@@ -467,7 +467,7 @@ include('functions/userfunction.php');
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-woman"></i>
+                            <img src="assets/img/services/experience.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="6" data-speed="3000">6</span>
@@ -478,7 +478,7 @@ include('functions/userfunction.php');
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-makeup-5"></i>
+                             <img src="assets/img/services/expert.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="20" data-speed="3000">20</span>

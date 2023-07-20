@@ -11,7 +11,7 @@
         </div>
     </div>
 
-    <div class="service-area theme-bg-dark-2 py-120">
+    <div class="service-area pb-50 pt-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -22,18 +22,21 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-5 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-facial-mask"></i>
+                            <img src="assets/img/services/certified.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
-                                <a href="#">Face Makeup</a>
+                                <a href="#">Certified Makeover Classes</a>
                             </h3>
                             <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
+                                We provide comprehensive training and education in various
+                                areas of the Makeover industry. Our classes are designed to
+                                equip students with the knowledge, skills, and certification
+                                necessary to pursue a successful career as a professional
+                                makeover artist or even start your own makeover business.
                             </p>
                             <div class="service-arrow">
                                 <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
@@ -41,132 +44,111 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+
+                <div class="col-md-6 col-lg-4">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="flaticon-eye"></i>
+                             <img src="assets/img/services/bride.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#">Bridal Makeover</a>
+                            </h3>
+                            <p class="service-text">
+                                The bridal makeup artist works closely with the bride to
+                                understand her preferences and vision for her wedding day
+                                look. They create a customized makeup application that
+                                enhances the bride's natural beauty while ensuring it
+                                withstands the demands of the day, including tears,
+                                humidity, and long hours.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="assets/img/services/fashion.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#">Fashion Styling</a>
+                            </h3>
+                            <p class="service-text">
+                                Our fashion consultants have an eye for style and can assist
+                                you in curating a wardrobe that reflects your personality
+                                and flatters your body type. Whether you need help with
+                                outfit selection, accessorizing, or revamping your entire
+                                wardrobe, our fashion styling services will elevate your
+                                sense of style and ensure you look your best for any
+                                occasion.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="assets/img/services/nail-art.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#">Nail Art </a>
+                            </h3>
+                            <p class="service-text">
+                                Nail art is a creative and decorative technique used to
+                                enhance the appearance of nails. It involves various
+                                designs, patterns, and embellishments applied to the nails
+                                to create unique and eye-catching looks.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="assets/img/services/styling.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                <a href="#">Hairstyling</a>
+                            </h3>
+                            <p class="service-text">
+                                From trendy cuts and vibrant colors to elegant updos and
+                                precision styling, our hairstylists are experts in creating
+                                stunning hairstyles that compliment your features and suit
+                                your personal style.
+                            </p>
+                            <div class="service-arrow">
+                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <img src="assets/img/services/eye-makeup.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">
                                 <a href="#">Eye Makeup</a>
                             </h3>
                             <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="flaticon-scissors"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">
-                                <a href="#">Haircut Makeup</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="flaticon-brushes"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">
-                                <a href="#">Bridal Makeup</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="flaticon-woman"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">
-                                <a href="#">Fashion Makeup</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="flaticon-makeup-4"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">
-                                <a href="#">Fantastic Makeup</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="flaticon-makeup-2"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">
-                                <a href="#">Face Painting</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
-                            </p>
-                            <div class="service-arrow">
-                                <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="flaticon-cream-2"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">
-                                <a href="#">Effect Makeup</a>
-                            </h3>
-                            <p class="service-text">
-                                There are many variations of passages available but the
-                                majority have suffered alteration injected.
+                                Eye makeup is a crucial element in enhancing the beauty and
+                                expressiveness of the eyes. It can transform the entire
+                                look, create depth, and highlight the eye's natural
+                                features.
                             </p>
                             <div class="service-arrow">
                                 <a href="#" class="service-btn">Read More <i class="fas fa-long-arrow-right"></i></a>

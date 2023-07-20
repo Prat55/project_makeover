@@ -67,7 +67,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-blush-1"></i>
+                        <img src="assets/img/services/check-list.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="100" data-speed="3000">100</span>
@@ -78,7 +78,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-makeup"></i>
+                        <img src="assets/img/services/happy.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="200" data-speed="3000">200</span>
@@ -89,7 +89,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-woman"></i>
+                        <img src="assets/img/services/expert.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="6" data-speed="3000">6</span>
@@ -100,7 +100,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="counter-box">
                         <div class="icon">
-                            <i class="flaticon-makeup-5"></i>
+                        <img src="assets/img/services/experience.png" alt="">
                         </div>
                         <div>
                             <span class="counter" data-count="+" data-to="20" data-speed="3000">20</span>
