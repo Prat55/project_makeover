@@ -1,3 +1,7 @@
+<?php
+    $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], '/')+1);
+?>
+
 <header class="header">
     <div class="main-navigation">
         <nav class="navbar navbar-expand-lg">
@@ -18,28 +22,28 @@
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
 
-                            <a class="nav-link active" href="
+                            <a class="nav-link <?= $page == 'index.php'? "active":"" ?>" href="
                                 index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.php">About
+                            <a class="nav-link <?= $page == 'about.php'? "active":"" ?>" href="about.php">About
                                 Us</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="service.php">Services</a>
+                        <li class="nav-item">
+                            <a class="nav-link <?= $page == 'service.php'? "active":"" ?>" href="service.php">Services</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="pricing.php">PRICING</a>
+                        <li class="nav-item">
+                            <a class="nav-link <?= $page == 'pricing.php'? "active":"" ?>" href="pricing.php">PRICING</a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="contact.php">Contact Us</a>
+                        <li class="nav-item">
+                            <a class="nav-link <?= $page == 'contact.php'? "active":"" ?>" href="contact.php">Contact Us</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="gallery.php">gallery</a>
+                        <li class="nav-item">
+                            <a class="nav-link <?= $page == 'gallery.php'? "active":"" ?>" href="gallery.php">gallery</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="classes-enquiry.php">Classes Enquiry
+                        <li class="nav-item">
+                            <a class="nav-link <?= $page == 'classes-enquiry.php'? "active":"" ?>" href="classes-enquiry.php">Classes Enquiry
                             </a>
                         </li>
                     </ul>

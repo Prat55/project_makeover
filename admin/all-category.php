@@ -47,7 +47,7 @@ include('include/header.php');
                                                     <td><?= $item1['service']; ?></td>
                                                     <td>Rs. <?= $item1['price']; ?></td>
                                                     <td>
-                                                        <a href="edit-category.php?id=<?= $item1['id']; ?>&service=<?= $item1['service']; ?>" class="btn btn-primary">
+                                                        <a href="edit-category.php?id=<?= $item1['id']; ?>&service=<?= $item1['service']; ?>" class="btn btn-sm btn-primary">
                                                             Edit
                                                         </a>
                                                     </td>
@@ -97,7 +97,7 @@ include('include/header.php');
                                                     <td><?= $item2['service']; ?></td>
                                                     <td>Rs. <?= $item2['price']; ?></td>
                                                     <td>
-                                                        <a href="edit-category.php?id=<?= $item2['id']; ?>&service=<?= $item2['service']; ?>" class="btn btn-primary">
+                                                        <a href="edit-category.php?id=<?= $item2['id']; ?>&service=<?= $item2['service']; ?>" class="btn btn-sm btn-primary">
                                                         Edit
                                                         </a>
                                                     </td>
@@ -143,7 +143,7 @@ include('include/header.php');
                                                     <td><?= $item3['service']; ?></td>
                                                     <td>Rs. <?= $item3['price']; ?></td>
                                                     <td>
-                                                        <a href="edit-category.php?id=<?= $item3['id']; ?>&service=<?= $item3['service']; ?>" class="btn btn-primary">Edit</a>
+                                                        <a href="edit-category.php?id=<?= $item3['id']; ?>&service=<?= $item3['service']; ?>" class="btn btn-sm btn-primary">Edit</a>
                                                     </td>
                                                     <td>
                                                         <a href="delete-category.php?id=<?= $item3['id']; ?>&service=<?= $item3['service']; ?>&price=<?= $item3['price']; ?>&table=category3" class="btn btn-sm btn-danger">
@@ -186,7 +186,7 @@ include('include/header.php');
                                                     <td><?= $item4['service']; ?></td>
                                                     <td>Rs. <?= $item4['price']; ?></td>
                                                     <td>
-                                                        <a href="edit-category.php?id=<?= $item4['id']; ?>&service=<?= $item4['service']; ?>" class="btn btn-primary">Edit</a>
+                                                        <a href="edit-category.php?id=<?= $item4['id']; ?>&service=<?= $item4['service']; ?>" class="btn btn-sm btn-primary">Edit</a>
                                                     </td>
                                                     <td>
                                                         <a href="delete-category.php?id=<?= $item4['id']; ?>&service=<?= $item4['service']; ?>&price=<?= $item4['price']; ?>&table=category4" class="btn btn-sm btn-danger">

@@ -1,13 +1,13 @@
-    <!--start overlay-->
-    <div class="overlay toggle-icon"></div>
-    <!--end overlay-->
+        <!--start overlay-->
+        <div class="overlay toggle-icon"></div>
+        <!--end overlay-->
 
-    <!--Start Back To Top Button-->
-    <a href="javaScript: void(0);" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
-    <!--End Back To Top Button-->
-    <footer class="page-footer">
-        <p class="mb-0">Copyright © 2023. All right reserved.</p>
-    </footer>
+        <!--Start Back To Top Button-->
+        <a href="javaScript: void(0);" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+        <!--End Back To Top Button-->
+        <footer class="page-footer">
+            <p class="mb-0">Copyright © 2023. All right reserved.</p>
+        </footer>
     </div>
     <!--end wrapper-->
 
@@ -42,13 +42,10 @@
         new PerfectScrollbar(".product-list");
         new PerfectScrollbar(".customers-list");
     </script>
-    <script 
+    <script  
         src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js" integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ==" crossorigin="anonymous" 
         referrerpolicy="no-referrer">
-    </script>
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
+    </script>    
     <script src="assets/js/custom.js"></script>
 </body>
 

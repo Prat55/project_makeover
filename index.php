@@ -1,5 +1,8 @@
-<?php include('includes/header.php') ?>
-<?php include('includes/popupform.php') ?>
+<?php 
+include('includes/header.php');
+include('functions/userfunction.php');
+?>
+<?php include('includes/popupform.php'); ?>
 <main class="main">
     <div class="hero-section">
         <div class="hero-slider2 owl-carousel owl-theme">
@@ -136,12 +139,9 @@
                                     their dreams and become skilled professionals in the
                                     beauty industry.
                                 </li>
-                                <!-- <li>
-Sed ut perspiciatis unde omnis iste natus sit
-</li> -->
                             </ul>
                         </div>
-                        <a href="about.html" class="theme-btn mt-4">Discover More <i
+                        <a href="about.php" class="theme-btn mt-4">Discover More <i
                                 class="fas fa-long-arrow-right"></i></a>
                     </div>
                 </div>
@@ -496,7 +496,7 @@ Sed ut perspiciatis unde omnis iste natus sit
                 <span class="site-title-tagline">Video</span>
                 <h2 class="site-title">Let's Check Our Video</h2>
             </div>
-            <div class="video-content" style="background-image: url(images/slider/slider1\\(1\).jpg)">
+            <div class="video-content" style="background-image: url(images/slider/slider1.jpg)">
                 <div class="row align-items-center">
                     <div class="col-lg-12">
                         <div class="video-wrapper">
@@ -526,108 +526,72 @@ Sed ut perspiciatis unde omnis iste natus sit
                         <div class="regular-chart container">
                             <ul>
                                 <h2>Eyebrow and Forehead</h2>
-                                <li>
-                                    <p>Eyebrow</p>
-                                    <span>Rs 30</span>
-                                </li>
-                                <li>
-                                    <p>Forehead and Uperlips</p>
-                                    <span>Rs 50</span>
-                                </li>
+                                <?php
+                                    $category1 = getAllPrice('category1');
+
+                                    if(mysqli_num_rows($category1) > 0) {
+                                        foreach($category1 as $item1) {
+                                            ?>
+                                                <li>
+                                                    <p><?= $item1['service']; ?></p>
+                                                    <span>Rs <?= $item1['price']; ?></span>
+                                                </li>
+                                            <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
 
                             <ul>
                                 <h2>Wax-Honey</h2>
-                                <li>
-                                    <p>Hand Wax</p>
-                                    <span>Rs 150</span>
-                                </li>
-                                <li>
-                                    <p>Underarms</p>
-                                    <span>Rs 50</span>
-                                </li>
-                                <li>
-                                    <p>Body Wax</p>
-                                    <span>Rs 600</span>
-                                </li>
-                                <li>
-                                    <p>leg Wax(Half)</p>
-                                    <span>Rs 200</span>
-                                </li>
-                                <li>
-                                    <p>Leg Wax(Full)</p>
-                                    <span>Rs 350</span>
-                                </li>
-                                <li>
-                                    <p>Face Wax</p>
-                                    <span>Rs 100</span>
-                                </li>
+                                <?php
+                                    $category2 = getAllPrice('category2');
+
+                                    if(mysqli_num_rows($category2) > 0) {
+                                        foreach($category2 as $item2) {
+                                            ?>
+                                                <li>
+                                                    <p><?= $item2['service']; ?></p>
+                                                    <span>Rs <?= $item2['price']; ?></span>
+                                                </li>
+                                            <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                             <ul>
                                 <h2>Wax-Richa,Creme,Chocolate,Beaan Wax</h2>
-                                <li>
-                                    <p>Underarms</p>
-                                    <span>Rs 100</span>
-                                </li>
-                                <li>
-                                    <p>Hand Wax</p>
-                                    <span>Rs 300</span>
-                                </li>
-                                <li>
-                                    <p>Leg Wax(Half)</p>
-                                    <span>Rs 500</span>
-                                </li>
-                                <li>
-                                    <p>Leg Wax(Full)</p>
-                                    <span>Rs 800</span>
-                                </li>
-                                <li>
-                                    <p>Body Wax</p>
-                                    <span>Rs 1200</span>
-                                </li>
-                                <li>
-                                    <p>Face Wax</p>
-                                    <span>Rs 200</span>
-                                </li>
+                                <?php
+                                    $category3 = getAllPrice('category3');
+                                
+                                    if(mysqli_num_rows($category3) > 0) {
+                                        foreach($category3 as $item3) {
+                                            ?>
+                                                <li>
+                                                    <p><?= $item3['service']; ?></p>
+                                                    <span>Rs <?= $item3['price']; ?></span>
+                                                </li>
+                                            <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                             <ul>
                                 <h2>Facial</h2>
-                                <li>
-                                    <p>Clean Up(Fruit)</p>
-                                    <span>Rs 200</span>
-                                </li>
-                                <li>
-                                    <p>Fruit Facial</p>
-                                    <span>Rs 400</span>
-                                </li>
-                                <li>
-                                    <p>Lotus Facial</p>
-                                    <span>Rs 800</span>
-                                </li>
-                                <li>
-                                    <p>RichFeel Facial</p>
-                                    <span>Rs 1000</span>
-                                </li>
-                                <li>
-                                    <p>Cheryl's Facial</p>
-                                    <span>Rs 800</span>
-                                </li>
-                                <li>
-                                    <p>O <sub>3</sub></p>
-                                    <span>Rs 1500-2000</span>
-                                </li>
-                                <li>
-                                    <p>Raga Facial</p>
-                                    <span>Rs 700</span>
-                                </li>
-                                <li>
-                                    <p>Oxyglow</p>
-                                    <span>Rs 500</span>
-                                </li>
-                                <li>
-                                    <p>VLCC</p>
-                                    <span>Rs 600</span>
-                                </li>
+                                <?php
+                                    $category4 = getAllPrice('category4');
+                                
+                                    if(mysqli_num_rows($category4) > 0) {
+                                        foreach($category4 as $item4) {
+                                            ?>
+                                                <li>
+                                                    <p><?= $item4['service']; ?></p>
+                                                    <span>Rs <?= $item4['price']; ?></span>
+                                                </li>
+                                            <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </div>
                     </div>

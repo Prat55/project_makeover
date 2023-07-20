@@ -5,7 +5,7 @@
         <div class="container">
             <h2 class="breadcrumb-title">About Us</h2>
             <ul class="breadcrumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li class="active">About Us</li>
             </ul>
         </div>
@@ -53,7 +53,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="about.html" class="theme-btn mt-4">Discover More <i
+                        <a href="about.php" class="theme-btn mt-4">Discover More <i
                                 class="fas fa-long-arrow-right"></i></a>
                     </div>
                 </div>

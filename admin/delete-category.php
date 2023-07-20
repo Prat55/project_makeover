@@ -13,10 +13,10 @@
         $delete_query_run = mysqli_query($con, $delete_query);
 
         if ($delete_query_run) {
-            echo "<script>window.location.href = 'all-category.php'; window.alert = 'Deleted Successfully';</script>";
-        } else {
-            echo "<script>window.location.href = 'all-category.php'; window.alert = 'Something Went Wrong!';</script>";
+            echo "<script>window.location.href = 'all-category.php';</script>";
+        } 
+        else {
+            echo "<script>window.location.href = 'all-category.php';</script>";
         }
     }
-
 ?>

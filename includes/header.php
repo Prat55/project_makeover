@@ -11,7 +11,7 @@
 
     <title>Roshni - Makeup Artist</title>
 
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/rosh logo.svg" />
 
     <link rel="stylesheet" href="assets/css/popupform.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />

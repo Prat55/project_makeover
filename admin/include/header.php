@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--favicon-->
-    <link rel="icon" href="assets\images\logo\favicon.png" type="image/png" />
+    <link rel="icon" href="assets\images\logo\rosh logo.svg" type="image/png" />
     <!--plugins-->
     <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
     <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
@@ -30,11 +30,38 @@
             background-color: #198754;
             color: #fff;
         }
+
+        .active{
+            background: #3f4a4f;
+        }
+        
+        .gallery-collection img{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+        }
+
+        .navitem{
+            height: 0px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+            top: 58px;
+            overflow: hidden;
+        }
+
+        .mobile-toggle-menu{
+            position: relative;
+        }
+
+        .mobile-toggle-menu:hover .navitem{
+            height: 200px;
+        }
     </style>
 </head>
 
-<body class="bg-theme bg-theme2">
-    <!--wrapper-->
-    <div class="wrapper">
-        <?php include('sidebar.php'); ?>
-        <?php include('navbar.php'); ?>
+<body class="bg-theme bg-theme2 pace-done">
+    
+    <?php include('sidebar.php'); ?>
+    <?php include('navbar.php'); ?>

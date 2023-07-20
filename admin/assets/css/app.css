@@ -71,7 +71,7 @@ a {
 
 	box-shadow: 0 .3rem .8rem rgba(0, 0, 0, .12) !important;
 
-	transition: all .2s ease-out
+	transition: all .2s ease-out;
 }
 
 .sidebar-header {
@@ -201,19 +201,21 @@ a {
 	z-index: 3
 }
 
-.wrapper.toggled .topbar {
+@media only screen and (max-width: 991px) {
+	.wrapper.toggled .topbar {
 
-	left: 70px
-}
+		left: 70px
+	}
 
-.wrapper.toggled .page-wrapper {
+	.wrapper.toggled .page-wrapper {
 
-	margin-left: 70px
-}
+		margin-left: 70px
+	}
 
-.wrapper.toggled .page-footer {
+	.wrapper.toggled .page-footer {
 
-	left: 70px
+		left: 70px
+	}
 }
 
 .sidebar-wrapper ul {
@@ -224,7 +226,7 @@ a {
 
 	list-style: none;
 
-	background: 0 0
+	background: 0 0;
 }
 
 .sidebar-wrapper .metismenu {
@@ -431,7 +433,7 @@ a {
 
 	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .logo-text {
 
-		display: none
+		display: block;
 	}
 
 	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper {

@@ -5,7 +5,14 @@ include('../config/dbcon.php');
 // fetching all tables from database
 function getAll($table){
     global $con;
-    $query = "SELECT * FROM $table";
+    $query = "SELECT * FROM `$table`";
+    return $query_run = mysqli_query($con, $query);
+}
+
+// get all images from database
+function getAllImages($table){
+    global $con;
+    $query = "SELECT * FROM `$table`";
     return $query_run = mysqli_query($con, $query);
 }
 
@@ -33,6 +40,13 @@ function addCategory($tableName){
 
     // Inserting data in database
     else{
+        $reset_query1 = "SET @num = 0;";
+        $reset_query2 = "UPDATE $tableName SET id = @num := (@num + 1);";
+        $reset_query3 = "ALTER TABLE $tableName AUTO_INCREMENT = 1;";
+        $reset_query_run1 = mysqli_query($con, $reset_query1);
+        $reset_query_run2 = mysqli_query($con, $reset_query2);
+        $reset_query_run3 = mysqli_query($con, $reset_query3);
+
         $cate_query = "INSERT INTO `$tableName`(`service`, `price`) VALUES ('$service','$price')";
         $cate_query_run = mysqli_query($con, $cate_query);
 
@@ -81,5 +95,6 @@ function redirect($url, $message)
     header("Location: $url");
     exit();
 }
+
 
 ?>

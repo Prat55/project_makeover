@@ -1,11 +1,14 @@
-<?php include('includes/header.php') ?>
+<?php 
+include('includes/header.php');
+include('functions/userfunction.php');
+?>
 
 <main class="main">
     <div class="site-breadcrumb" style="background: url(images/about-us/me.jpg)">
         <div class="container">
             <h2 class="breadcrumb-title">gallery</h2>
             <ul class="breadcrumb-menu">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li class="active">gallery</li>
             </ul>
         </div>
@@ -22,30 +25,17 @@
             </div>
 
             <div class="gallery-collection">
-                <img src="gallery/1.jfif" alt="">
-                <img src="gallery/2.jfif" alt="">
-                <img src="./gallery/3.jpg" alt="">
-                <img src="./gallery/4.jpg" alt="">
-                <img src="./gallery/5.jpg" alt="">
-                <img src="./gallery/6.jpg" alt="">
-                <img src="./gallery/7.jpg" alt="">
-                <img src="./gallery/9.jpg" alt="">
-                <img src="./gallery/10.jpg" alt="">
-                <img src="./gallery/11.jpg" alt="">
-                <img src="./gallery/12.jpg" alt="">
-                <img src="./gallery/13.jpg" alt="">
-                <img src="./gallery/14.jpg" alt="">
-                <img src="./gallery/15.jpg" alt="">
-                <img src="./gallery/16.jpg" alt="">
-                <img src="./gallery/17.jpg" alt="">
-                <img src="./gallery/18.jpg" alt="">
-                <img src="./gallery/19.jpg" alt="">
-                <img src="./gallery/20.jpg" alt="">
-                <img src="./gallery/21.jpg" alt="">
-                <img src="./gallery/22.jpg" alt="">
-                <img src="./gallery/23.jpg" alt="">
-                <img src="./gallery/24.jpg" alt="">
-                <img src="./gallery/25.jpg" alt="">
+                <?php
+                    $images = getAllImages('images');
+
+                    if(mysqli_num_rows($images) > 0) {
+                        foreach($images as $image) {
+                            ?>
+                                <img src="gallery/<?= $image['file_name'] ?>" alt="" width="320px" >
+                            <?php
+                        }
+                    }
+                ?>
             </div>
 
 

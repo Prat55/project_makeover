@@ -1,6 +1,6 @@
 <?php 
-include('include/header.php');
 include('../middleware/adminMiddleware.php');
+include('include/header.php');
 ?>
 <!--start page wrapper -->
 <div class="page-wrapper">

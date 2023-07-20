@@ -4,10 +4,12 @@ session_start();
 
 include('../functions/myfunction.php');
 
-//! If user is not logged it will not giveaccess to user it simply redirect to login page
+// ? If user is logged in then it simply redirect to admin panel whenever user type admin in url
 if (isset($_SESSION['auth'])) {
 
-} else {
+} 
+//! If user is not logged it will not give access to user it simply redirect to login page
+else {
     redirect("../login.php", "Login to continue");
 }
 
