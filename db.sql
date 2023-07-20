@@ -1,9 +1,29 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 02, 2020 at 07:56 AM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.2.23
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
--- * this will create a database with our project 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `rosh_makeover`
+--
+
+-- --------------------------------------------------------
+
+-- Table structure for table `rosh-credentials`
 
 CREATE TABLE `rosh-credentials` (
   `email` varchar(191) NOT NULL,
@@ -14,7 +34,7 @@ CREATE TABLE `rosh-credentials` (
 INSERT INTO `rosh-credentials` (`email`, `password`) VALUES ('admin@gmail.com', 'PassAdmin@90');
 
 
--- * Creating table for categories
+--  Creating table for categories
 
 CREATE TABLE `category1` (
   `id` int(11) NOT NULL,

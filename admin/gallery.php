@@ -27,6 +27,9 @@
                         </form>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <span>Note: At a time 20 images can be upload</span>
+                </div>
             </div>
             <div class="col-md-12">
                 <h3 class="text-center">Images</h3>
@@ -47,7 +50,7 @@
                                     ?>
                                         <tr>
                                             <td><?= $image['id'] ?></td>
-                                            <td><img src="../gallery/<?= $image['file_name']; ?>" alt="" width = "100px" height = "100px"></td>
+                                            <td><img src="../gallery/<?= $image['file_name']; ?>" alt="" width = "100px" height = "120px"></td>
                                             <td><?= $image['uploaded_on']; ?></td>
                                             <td>
                                                 <a href="delete-img.php?id=<?= $image['id']; ?>" class="btn   btn-danger">
