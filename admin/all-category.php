@@ -20,7 +20,7 @@ include('include/header.php');
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Categories</h4>
+                        <h4>Rate Cards</h4>
                     </div>
                     <!-- 1st Category -->
                     <div class="card-body">

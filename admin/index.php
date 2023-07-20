@@ -128,7 +128,12 @@ include('include/header.php');
 						</div>
 					</div>
 				</div>
-				<div class="col">
+			</div><!--end row-->
+		</div>
+        <!--end row-->
+		<div class="card">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 row-group g-0">
+			<div class="col">
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<?php
@@ -153,14 +158,13 @@ include('include/header.php');
 						</div>
 						<hr>
 						<div class="d-flex align-items-center text-white">
-							<p class="mb-0">Album</p>
+							<p class="mb-0">Gallery</p>
 							<p class="mb-0 ms-auto"><span><i class='bx bx-up-arrow-alt'></i></span></p>
 						</div>
 					</div>
 				</div>
-			</div><!--end row-->
-		</div>
-        <!--end row-->
+			</div>
+		</div><!--end row-->
     </div>
 </div>
 <!--end page wrapper -->
