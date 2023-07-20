@@ -11,11 +11,6 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `rosh_makeover`
 --
@@ -27,7 +22,7 @@ START TRANSACTION;
 CREATE TABLE `rosh-credentials` (
   `email` varchar(191) NOT NULL,
   `password` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 
 INSERT INTO `rosh-credentials` (`email`, `password`) VALUES ('admin@gmail.com', 'PassAdmin@90');
@@ -39,7 +34,7 @@ CREATE TABLE `category1` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
   `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 INSERT INTO `category1` (`id`,`service`, `price`) 
 VALUES 
@@ -51,7 +46,7 @@ CREATE TABLE `category2` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
   `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 INSERT INTO `category2` (`id`,`service`, `price`) 
 VALUES 
@@ -67,7 +62,7 @@ CREATE TABLE `category3` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
   `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 INSERT INTO `category3` (`id`,`service`, `price`) 
 VALUES 
@@ -83,7 +78,7 @@ CREATE TABLE `category4` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
   `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 INSERT INTO `category4` (`id`,`service`, `price`) 
 VALUES 
@@ -102,7 +97,7 @@ CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `file_name` varchar(191) NOT NULL,
   `uploaded_on` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 INSERT INTO `images` (`id`,`file_name`) 
 VALUES 
