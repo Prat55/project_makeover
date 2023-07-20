@@ -88,9 +88,15 @@
             <div class="row">
                 <div class="col-md-6 align-self-center">
                     <p class="copyright-text">
-                        &copy; Copyright <span id="date"></span>
-                        <a href="#"> Rosh Makeover </a> All Rights Reserved.Designed and
-                        Developed by <a href="#">Maestloper Media.</a>
+                        &copy; Copyright <span id="date">2023</span>
+                        All Rights Reserved by 
+                        <a href="#">
+                            Rosh Makeover 
+                        </a> 
+                        & Designed and Developed by 
+                        <a href="#">
+                            Maestloper Media.
+                        </a>
                     </p>
                 </div>
                 <div class="col-md-6 align-self-center">

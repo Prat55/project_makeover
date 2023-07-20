@@ -2,34 +2,25 @@
 <header>
     <div class="topbar d-flex align-items-center">
         <nav class="navbar navbar-expand gap-3">
-            <div class="mobile-toggle-menu"><i class="bx bx-menu"></i></div>
-            <div class="navitem bg-theme bg-theme2">
-                <ul>
-                    <li>
-                        <a href="index.php" class="<?= $page == 'index.php'? "active":"" ?>">
-                            <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
-                            <div class="menu-title">Dashboard</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="all-category.php" class="<?= $page == 'all-category.php'? "active":"" ?>">
-                            <div class="parent-icon"><i class="bx bx-cart"></i></div>
-                            <div class="menu-title">All Category</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="gallery.php" class="<?= $page == 'gallery.php'? "active":"" ?>">
-                            <div class="parent-icon"><i class="bx bx-photo-album"></i></div>
-                            <div class="menu-title">Album</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="add-category.php" class="<?= $page == 'add-category.php'? "active":"" ?>">
-                            <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
-                            <div class="menu-title">Add Category</div>
-                        </a>
-                    </li>
-                </ul>
+            <div class="mobile-toggle-menu">
+                <a href="index.php" class="<?= $page == 'index.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
+                </a>
+            </div>
+            <div class="mobile-toggle-menu">
+                <a href="all-category.php" class="<?= $page == 'all-category.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-cart"></i></div>
+                </a>
+            </div>
+            <div class="mobile-toggle-menu">
+                <a href="gallery.php" class="<?= $page == 'gallery.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-photo-album"></i></div>
+                </a>
+            </div>
+            <div class="mobile-toggle-menu">
+                <a href="add-category.php" class="<?= $page == 'add-category.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
+                </a>
             </div>
 
             <div class="top-menu ms-auto"></div>

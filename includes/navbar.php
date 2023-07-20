@@ -7,7 +7,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.php">
-                    <img src="assets/img/logo/Rosh logo.svg" alt="logo" />
+                    <img src="assets/img/logo/rosh logo.svg" alt="logo" />
                 </a>
                 <div class="mobile-menu-right">
                     <div class="mobile-menu-list">

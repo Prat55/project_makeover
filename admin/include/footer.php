@@ -6,7 +6,17 @@
         <a href="javaScript: void(0);" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
         <!--End Back To Top Button-->
         <footer class="page-footer">
-            <p class="mb-0">Copyright © 2023. All right reserved.</p>
+            <p class="mb-0">
+                &copy; Copyright <span id="date">2023</span>
+                All Rights Reserved by 
+                <a href="#">
+                    Rosh Makeover 
+                </a> &
+                Designed and Developed by 
+                <a href="#">
+                    Maestloper Media.
+                </a>
+            </p>
         </footer>
     </div>
     <!--end wrapper-->
