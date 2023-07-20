@@ -250,68 +250,68 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/team/01.jpg" alt="thumb" />
-                        </div>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="team-content">
-                            <div class="team-bio">
-                                <h5><a href="#">Chad Smith</a></h5>
-                                <span>CEO & Founder</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row justify-content-center">
+                <!-- <div class="col-md-6 col-lg-3">
+              <div class="team-item">
+                <div class="team-img">
+                  <img src="assets/img/team/01.jpg" alt="thumb" />
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/team/02.jpg" alt="thumb" />
-                        </div>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="team-content">
-                            <div class="team-bio">
-                                <h5><a href="#">Malissa Fie</a></h5>
-                                <span>Makeup Artist</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/team/03.jpg" alt="thumb" />
-                        </div>
-                        <div class="team-social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="team-content">
-                            <div class="team-bio">
-                                <h5><a href="#">Arron Rodri</a></h5>
-                                <span>Makeup Artist</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="team-content">
+                  <div class="team-bio">
+                    <h5><a href="#">Chad Smith</a></h5>
+                    <span>CEO & Founder</span>
+                  </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+              </div>
+            </div> -->
+                <!-- <div class="col-md-6 col-lg-3">
+              <div class="team-item">
+                <div class="team-img">
+                  <img src="assets/img/team/02.jpg" alt="thumb" />
+                </div>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="team-content">
+                  <div class="team-bio">
+                    <h5><a href="#">Malissa Fie</a></h5>
+                    <span>Makeup Artist</span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                <!-- <div class="col-md-6 col-lg-3">
+              <div class="team-item">
+                <div class="team-img">
+                  <img src="assets/img/team/03.jpg" alt="thumb" />
+                </div>
+                <div class="team-social">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="team-content">
+                  <div class="team-bio">
+                    <h5><a href="#">Arron Rodri</a></h5>
+                    <span>Makeup Artist</span>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                <div class="col-md-6 col-lg-6">
                     <div class="team-item">
                         <div class="team-img">
-                            <img src="assets/img/team/04.jpg" alt="thumb" />
+                            <img src="assets/img/team/Founder-Photo.jpg" alt="thumb" />
                         </div>
                         <div class="team-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -321,8 +321,8 @@
                         </div>
                         <div class="team-content">
                             <div class="team-bio">
-                                <h5><a href="#">Tony Pinto</a></h5>
-                                <span>Makeup Artist</span>
+                                <h5><a href="#">Roshani Paswan</a></h5>
+                                <span>(Director & Founder)</span>
                             </div>
                         </div>
                     </div>
