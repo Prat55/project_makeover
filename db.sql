@@ -10,7 +10,6 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +26,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `rosh-credentials` (
   `email` varchar(191) NOT NULL,
-  `password` varchar(191) NOT NULL,
+  `password` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
@@ -39,7 +38,7 @@ INSERT INTO `rosh-credentials` (`email`, `password`) VALUES ('admin@gmail.com', 
 CREATE TABLE `category1` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL,
+  `price` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `category1` (`id`,`service`, `price`) 
@@ -51,7 +50,7 @@ VALUES
 CREATE TABLE `category2` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL,
+  `price` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `category2` (`id`,`service`, `price`) 
@@ -67,7 +66,7 @@ VALUES
 CREATE TABLE `category3` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL,
+  `price` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `category3` (`id`,`service`, `price`) 
@@ -83,7 +82,7 @@ VALUES
 CREATE TABLE `category4` (
   `id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL,
+  `price` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `category4` (`id`,`service`, `price`) 
@@ -102,10 +101,10 @@ VALUES
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `file_name` varchar(191) NOT NULL,
-  `uploaded_on` datetime NOT NULL,
+  `uploaded_on` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `images` (`id`,`service`) 
+INSERT INTO `images` (`id`,`file_name`) 
 VALUES 
 (1,'1.jfif'),
 (2,'2.jfif'),

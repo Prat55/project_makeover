@@ -38,8 +38,7 @@
                         <tr>
                             <th>Image No</th>
                             <th>Image</th>
-                            <th>Upload Date | Time</th>
-                            <th>Delete</th>
+                            <th>Remove</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,10 +50,9 @@
                                         <tr>
                                             <td><?= $image['id'] ?></td>
                                             <td><img src="../gallery/<?= $image['file_name']; ?>" alt="" width = "100px" height = "120px"></td>
-                                            <td><?= $image['uploaded_on']; ?></td>
                                             <td>
                                                 <a href="delete-img.php?id=<?= $image['id']; ?>" class="btn   btn-danger">
-                                                    Delete
+                                                    Remove
                                                 </a>
                                             </td>
                                         </tr>
