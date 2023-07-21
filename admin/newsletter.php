@@ -24,8 +24,14 @@ include('include/header.php');
         ?>
             <div class="col-md-12">
                 <h2>Newsletters</h2>
+                
                 <div class="card">
                     <div class="card-body">
+                        <form action="../functions/newsubmit.php" method="post">
+                            <button type="submit" name="clear_all" class="btn btn-sm btn-secondary mb-2">
+                                Clear All
+                            </button>
+                        </form>
                         <table class="table table-bordered">
                             <thead>
                                 <th>No.</th>
@@ -48,7 +54,7 @@ include('include/header.php');
                                         }
                                     }
                                     else {
-                                        echo '<tr><td colspan="4" style="text-align: center;">No Categories Found</td></tr>';
+                                        echo '<tr><td colspan="3" style="text-align: center;">No recent newsletters</td></tr>';
                                     }
                                 ?>
                             </tbody>

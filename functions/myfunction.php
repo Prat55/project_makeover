@@ -23,6 +23,17 @@ function getByService($table, $id, $service){
     return $query_run = mysqli_query($con, $query);
 }
 
+// ?For reset auto increment
+function resetQuery($table){
+    global $con;
+    $reset_query1 = "SET @num = 0;";
+    $reset_query2 = "UPDATE `$table` SET id = @num := (@num + 1);";
+    $reset_query3 = "ALTER TABLE `$table` AUTO_INCREMENT = 1;";
+    $reset_query_run1 = mysqli_query($con, $reset_query1);
+    $reset_query_run2 = mysqli_query($con, $reset_query2);
+    $reset_query_run3 = mysqli_query($con, $reset_query3);
+}
+
 // ? Adding data to table category1,2,3,4
 function addCategory($tableName){
     global $con;
@@ -41,12 +52,7 @@ function addCategory($tableName){
 
     // Inserting data in database
     else{
-        $reset_query1 = "SET @num = 0;";
-        $reset_query2 = "UPDATE $tableName SET id = @num := (@num + 1);";
-        $reset_query3 = "ALTER TABLE $tableName AUTO_INCREMENT = 1;";
-        $reset_query_run1 = mysqli_query($con, $reset_query1);
-        $reset_query_run2 = mysqli_query($con, $reset_query2);
-        $reset_query_run3 = mysqli_query($con, $reset_query3);
+        resetQuery("$tableName");
 
         $cate_query = "INSERT INTO `$tableName`(`service`, `price`) VALUES ('$service','$price')";
         $cate_query_run = mysqli_query($con, $cate_query);
@@ -77,7 +83,7 @@ function updateCategory($tableName){
     }
     // Updating data in database
     else{
-
+        
         $update_query = "UPDATE `$tableName` SET service = '$service', price = '$price' WHERE id = '$id'";
         $update_query_run = mysqli_query($con, $update_query);
 
@@ -107,12 +113,7 @@ function addCources($tableName){
 
     // Inserting data in database
     else{
-        $reset_query1 = "SET @num = 0;";
-        $reset_query2 = "UPDATE $tableName SET id = @num := (@num + 1);";
-        $reset_query3 = "ALTER TABLE $tableName AUTO_INCREMENT = 1;";
-        $reset_query_run1 = mysqli_query($con, $reset_query1);
-        $reset_query_run2 = mysqli_query($con, $reset_query2);
-        $reset_query_run3 = mysqli_query($con, $reset_query3);
+        resetQuery("$tableName");
 
         $cate_query = "INSERT INTO `$tableName`(`course-name`, `seats`) VALUES ('$course_name','$seats')";
         $cate_query_run = mysqli_query($con, $cate_query);

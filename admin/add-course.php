@@ -48,11 +48,11 @@ include('include/header.php');
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h4>Rate Cards</h4>
+                        <h4>Courses</h4>
                     </div>
                     <!-- 1st Category -->
                     <div class="card-body">
-                        <h4>Courses</h4>
+                        
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
@@ -85,7 +85,7 @@ include('include/header.php');
                                         }
                                     }
                                     else {
-                                        echo '<tr><td colspan="5" style="text-align: center;">No Categories Found</td></tr>';
+                                        echo '<tr><td colspan="5" style="text-align: center;">No active courses added!</td></tr>';
                                     }
                                 ?>
                             </tbody>

@@ -20,7 +20,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No Data Found!</h5>
 									<?php
 								}
 
@@ -49,7 +49,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No Data Found!</h5>
 									<?php
 								}
 
@@ -78,7 +78,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No Data Found!</h5>
 									<?php
 								}
 
@@ -107,7 +107,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No Data Found!</h5>
 									<?php
 								}
 
@@ -141,7 +141,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No Data Found!</h5>
 									<?php
 								}
 
@@ -170,7 +170,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No Data Found!</h5>
 									<?php
 								}
 
@@ -199,7 +199,7 @@ include('include/header.php');
 								}
 								else{
 									?>
-										<h5 class="mb-0 fs-6">No Recent Enquiries</h5>
+										<h5 class="mb-0 fs-6">No Recent Enquiries!</h5>
 									<?php
 								}
 
@@ -219,16 +219,16 @@ include('include/header.php');
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<?php
-								$dash_service4 = getAll('category4');
+								$dash_service8 = getAll('courses');
 								
-								if($services_total4 = mysqli_num_rows($dash_service4)){
+								if($services_total8 = mysqli_num_rows($dash_service8)){
 									?>
-										<h5 class="mb-0"><?= $services_total4 ?></h5>
+										<h5 class="mb-0"><?= $services_total8 ?></h5>
 									<?php
 								}
 								else{
 									?>
-										<h5 class="mb-0">No Data Found!</h5>
+										<h5 class="mb-0 fs-6">No active courses found!</h5>
 									<?php
 								}
 
@@ -239,7 +239,7 @@ include('include/header.php');
 						</div>
 						<hr>
 						<div class="d-flex align-items-center text-white">
-							<p class="mb-0">Facial</p>
+							<p class="mb-0">Courses</p>
 							<!-- <p class="mb-0 ms-auto"><span><i class='bx bx-up-arrow-alt'></i></span></p> -->
 						</div>
 					</div>

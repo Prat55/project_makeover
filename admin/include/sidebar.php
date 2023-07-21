@@ -53,7 +53,7 @@
             </li>
             <li>
                 <a href="add-course.php" class="<?= $page == 'add-course.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-comment-detail"></i></div>
+                    <div class="parent-icon"><i class="bx bx-collection"></i></div>
                     <div class="menu-title">Courses</div>
                 </a>
             </li>

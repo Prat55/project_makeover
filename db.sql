@@ -129,6 +129,14 @@ CREATE TABLE `form-data` (
   `recieved_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
+
+CREATE TABLE `courses` (
+  `id` int(11) NOT NULL,
+  `course-name` varchar(191) NOT NULL,
+  `seat` varchar(191) NOT NULL,
+  `announced_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
+
 --
 -- Indexes for table `category1`
 --
@@ -179,6 +187,13 @@ ALTER TABLE `form-data`
 
 
 --
+-- Indexes for table `courses`
+--
+ALTER TABLE `courses`
+  ADD PRIMARY KEY (`id`);
+
+
+--
 -- AUTO_INCREMENT for table `category1`
 --
 ALTER TABLE `category1`
@@ -224,5 +239,12 @@ ALTER TABLE `newsletter`
 -- AUTO_INCREMENT for table `form-data`
 --
 ALTER TABLE `form-data`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+
+--
+-- AUTO_INCREMENT for table `courses`
+--
+ALTER TABLE `courses`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;

@@ -34,23 +34,23 @@
                         <h4 class="footer-widget-title">Our Services</h4>
                         <ul class="footer-list">
                             <li>
-                                <a href="#"><i class="fas fa-caret-right"></i>Certified Makeover
+                                <a href="javascript: void(0);"><i class="fas fa-caret-right"></i>Certified Makeover
                                     Classes</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-caret-right"></i> Bridal Makeover</a>
+                                <a href="javascript: void(0);"><i class="fas fa-caret-right"></i> Bridal Makeover</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-caret-right"></i>Hairstyling</a>
+                                <a href="javascript: void(0);"><i class="fas fa-caret-right"></i>Hairstyling</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-caret-right"></i>Eye Makeup</a>
+                                <a href="javascript: void(0);"><i class="fas fa-caret-right"></i>Eye Makeup</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-caret-right"></i>Fashion Styling</a>
+                                <a href="javascript: void(0);"><i class="fas fa-caret-right"></i>Fashion Styling</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-caret-right"></i>Nail Art</a>
+                                <a href="javascript: void(0);"><i class="fas fa-caret-right"></i>Nail Art</a>
                             </li>
                             <!-- <li>
                     <a href="#"
@@ -70,7 +70,7 @@
                                 </p>
                                 <div class="subscribe-form">
                                     <form action="functions/newsubmit.php" method="post">
-                                        <input type="email" name="email" class="form-control" placeholder="Your Email" />
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" required/>
                                         <button class="theme-btn" type="submit" name="news-sub">
                                             Subscribe Now <i class="far fa-paper-plane"></i>
                                         </button>
@@ -83,7 +83,7 @@
                                                 <i class='bx bxs-check-circle'></i>
                                             </div>
                                             <div class="ms-3">
-                                                <h6 class="mb-0 text-white fs-5">Subscribed Successfully</h6>
+                                                <h6 class="mb-0 text-white fs-5"><?= $_SESSION['message']; ?></h6>
                                             </div>
                                         </div>
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

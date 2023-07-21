@@ -60,7 +60,7 @@ include('include/header.php');
                                         }
                                     }
                                     else {
-                                        echo '<tr><td colspan="6" style="text-align: center;">No Enquiries Found</td></tr>';
+                                        echo '<tr><td colspan="7" style="text-align: center;">No Enquiries Found</td></tr>';
                                     }
                                 ?>
                             </tbody>
