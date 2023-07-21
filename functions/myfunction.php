@@ -2,27 +2,28 @@
 
 include('../config/dbcon.php');
 
-// fetching all tables from database
+//? fetching all tables from database
 function getAll($table){
     global $con;
     $query = "SELECT * FROM `$table`";
     return $query_run = mysqli_query($con, $query);
 }
 
-// get all images from database
+//? get all images from database
 function getAllImages($table){
     global $con;
-    $query = "SELECT * FROM `$table`";
-    return $query_run = mysqli_query($con, $query);
+    $image_query = "SELECT * FROM `$table`";
+    return $image_query_run = mysqli_query($con, $image_query);
 }
 
-// help to match specific service row from table
+//? help to match specific service and id column from table 
 function getByService($table, $id, $service){
     global $con;
     $query = "SELECT * FROM `$table` WHERE id = '$id' AND service = '$service'";
     return $query_run = mysqli_query($con, $query);
 }
 
+// ? Adding data to table category1,2,3,4
 function addCategory($tableName){
     global $con;
     $service = $_POST['service'];
@@ -59,6 +60,7 @@ function addCategory($tableName){
     }
 }
 
+// ?Updating data of table category1,2,3,4
 function updateCategory($tableName){
     global $con;
     $id = $_POST['id'];
@@ -84,6 +86,42 @@ function updateCategory($tableName){
         }
         else{
             redirect("all-category.php", "Something Went Wrong!");
+        }
+    }
+}
+
+function addCources($tableName){
+    global $con;
+    $course_name = $_POST['course-name'];
+    $seats = $_POST['seats'];
+
+    // Checking if the service is null or not
+    if($course_name == ""){
+        echo "<script>alert('Course name is required');</script>";
+    }
+
+    // Checking if the price is null or not
+    else if($seats == ""){
+        echo "<script>alert('Seats is required');</script>";
+    }
+
+    // Inserting data in database
+    else{
+        $reset_query1 = "SET @num = 0;";
+        $reset_query2 = "UPDATE $tableName SET id = @num := (@num + 1);";
+        $reset_query3 = "ALTER TABLE $tableName AUTO_INCREMENT = 1;";
+        $reset_query_run1 = mysqli_query($con, $reset_query1);
+        $reset_query_run2 = mysqli_query($con, $reset_query2);
+        $reset_query_run3 = mysqli_query($con, $reset_query3);
+
+        $cate_query = "INSERT INTO `$tableName`(`course-name`, `seats`) VALUES ('$course_name','$seats')";
+        $cate_query_run = mysqli_query($con, $cate_query);
+
+        if($cate_query_run){
+            redirect("add-course.php", "Category Added Successfully");
+        }
+        else{
+            redirect("add-course.php", "Something Went Wrong!");
         }
     }
 }

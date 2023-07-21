@@ -32,5 +32,8 @@
     else if(isset($_POST['update_category_btn4'])){
         updateCategory("category4");
     }
+    else if(isset($_POST['add_course'])){
+        addCources("courses");
+    }
 
 ?>

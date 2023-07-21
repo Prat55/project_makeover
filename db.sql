@@ -1,17 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.9.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Jan 02, 2020 at 07:56 AM
--- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.2.23
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-
---
 -- Database: `rosh_makeover`
 --
 
@@ -96,7 +83,7 @@ VALUES
 CREATE TABLE `images` (
   `id` int(11) NOT NULL,
   `file_name` varchar(191) NOT NULL,
-  `uploaded_on` datetime NOT NULL
+  `uploaded_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 INSERT INTO `images` (`id`,`file_name`) 
@@ -124,6 +111,23 @@ VALUES
 (21,'23.jpg'),
 (22,'24.jpg'),
 (23,'25.jpg');
+
+
+CREATE TABLE `newsletter` (
+  `id` int(11) NOT NULL,
+  `email` varchar(191) NOT NULL,
+  `recieved_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
+
+
+CREATE TABLE `form-data` (
+  `id` int(11) NOT NULL,
+  `name` varchar(191) NOT NULL,
+  `email` varchar(191) NOT NULL,
+  `phone` varchar(191) NOT NULL,
+  `course` varchar(191) NOT NULL,
+  `recieved_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
 --
 -- Indexes for table `category1`
@@ -161,6 +165,20 @@ ALTER TABLE `images`
 
 
 --
+-- Indexes for table `newsletter`
+--
+ALTER TABLE `newsletter`
+  ADD PRIMARY KEY (`id`);
+
+
+--
+-- Indexes for table `form-data`
+--
+ALTER TABLE `form-data`
+  ADD PRIMARY KEY (`id`);
+
+
+--
 -- AUTO_INCREMENT for table `category1`
 --
 ALTER TABLE `category1`
@@ -193,4 +211,18 @@ ALTER TABLE `category4`
 --
 ALTER TABLE `images`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+
+--
+-- AUTO_INCREMENT for table `newsletter`
+--
+ALTER TABLE `newsletter`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+
+--
+-- AUTO_INCREMENT for table `form-data`
+--
+ALTER TABLE `form-data`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;

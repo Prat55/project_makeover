@@ -9,11 +9,16 @@
     <div class="page-content">
         <div class="row">
         <?php if (isset($_SESSION['message'])) { ?>
-            <div class="alert alert-success alert-dismissible fade show">
-                <strong>Hey!</strong>
-                <strong><?= $_SESSION['message']; ?>.</strong>
-                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-            </div>
+            <div class="alert border-0 alert-dismissible fade show py-2">
+				<div class="d-flex align-items-center">
+					<div class="font-35 text-white"><i class='bx bxs-check-circle'></i></div>
+					<div class="ms-3">
+						<h6 class="mb-0 text-white"><?= $_SESSION['message']; ?></h6>
+						<!-- <div class="text-white">A simple success alert—check it out!</div> -->
+					</div>
+				</div>
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
         <?php
             unset($_SESSION['message']);
         }

@@ -69,13 +69,30 @@
                                     Subscribe Our Newsletter To Get Latest Update And News
                                 </p>
                                 <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="email" class="form-control" placeholder="Your Email" />
-                                        <button class="theme-btn" type="submit">
+                                    <form action="functions/newsubmit.php" method="post">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" />
+                                        <button class="theme-btn" type="submit" name="news-sub">
                                             Subscribe Now <i class="far fa-paper-plane"></i>
                                         </button>
                                     </form>
                                 </div>
+                                <?php if (isset($_SESSION['message'])) { ?>
+                                    <div class="alert border-1 alert-dismissible fade show py-2">
+                                        <div class="d-flex align-items-center">
+                                            <div class="font-35 text-white">
+                                                <i class='bx bxs-check-circle'></i>
+                                            </div>
+                                            <div class="ms-3">
+                                                <h6 class="mb-0 text-white fs-5">Subscribed Successfully</h6>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                <?php
+                                    unset($_SESSION['message']);
+                                }   
+                                
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -83,6 +100,7 @@
             </div>
         </div>
     </div>
+
     <div class="copyright">
         <div class="container">
             <div class="row">

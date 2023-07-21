@@ -14,13 +14,16 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo/rosh logo.svg" />
 
     <link rel="stylesheet" href="assets/css/popupform.css" />
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link href="assets/css/pace.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/all-fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/flaticon.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="assets/css/icons.css" rel="stylesheet" />
 </head>
 
 <body>

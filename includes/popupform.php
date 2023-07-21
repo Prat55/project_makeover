@@ -22,18 +22,18 @@
             <h1 class="site-title-tagline" style="color: #e91e63">
                 Admission form
             </h1>
-            <form>
+            <form action="functions/form-submit.php" method="post">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" class="form-control" />
+                    <input type="text" name="name" placeholder="Your Name" class="form-control" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Your Mobile NO." class="form-control" />
+                    <input type="text" name="phone" placeholder="Your Mobile NO." class="form-control" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" placeholder="Your Email" class="form-control" />
+                    <input type="email" name="email" placeholder="Your Email" class="form-control" required/>
                 </div>
                 <div class="form-group">
-                    <select name="languages" id="lang" class="form-control">
+                    <select name="course" id="lang" class="form-control">
                         <option class="courses" value="Select Courses">
                             Select Courses
                         </option>
@@ -50,8 +50,23 @@
                         </option>
                     </select>
                 </div>
-                <button type="button" class="btn">Submit</button>
+                <button type="submit" name="form-submit" class="btn">Submit</button>
             </form>
+            <?php if (isset($_SESSION['message'])) { ?>
+                <div class="alert border-0 alert-dismissible fade show py-2 pt-20">
+                    <div class="d-flex align-items-center">
+                        <div class="font-35 text-black"><i class='bx bxs-check-circle'></i></div>
+                        <div class="ms-3">
+                            <h6 class="mb-0 text-black"><?= $_SESSION['message']; ?></h6>
+                            <!-- <div class="text-white">A simple success alert—check it out!</div> -->
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php
+                unset($_SESSION['message']);
+            }
+            ?>
         </div>
     </div>
 </div>

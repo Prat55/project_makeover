@@ -39,6 +39,24 @@
                     <div class="menu-title">All Category</div>
                 </a>
             </li>
+            <li>
+                <a href="newsletter.php" class="<?= $page == 'newsletter.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-news"></i></div>
+                    <div class="menu-title">Newsletter</div>
+                </a>
+            </li>
+            <li>
+                <a href="enquiry.php" class="<?= $page == 'enquiry.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-comment-detail"></i></div>
+                    <div class="menu-title">Enquiry</div>
+                </a>
+            </li>
+            <li>
+                <a href="add-course.php" class="<?= $page == 'add-course.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-comment-detail"></i></div>
+                    <div class="menu-title">Courses</div>
+                </a>
+            </li>
         </ul>
         <!--end navigation-->
     </div>

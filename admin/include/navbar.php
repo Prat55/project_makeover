@@ -22,6 +22,16 @@
                     <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
                 </a>
             </div>
+            <div class="mobile-toggle-menu">
+                <a href="newsletter.php" class="<?= $page == 'newsletter.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-news"></i></div>
+                </a>
+            </div>
+            <div class="mobile-toggle-menu">
+                <a href="enquiry.php" class="<?= $page == 'enquiry.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-comment-detail"></i></div>
+                </a>
+            </div>
 
             <div class="top-menu ms-auto"></div>
             <div class="user-box dropdown px-3">
