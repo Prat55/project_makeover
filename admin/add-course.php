@@ -76,7 +76,7 @@ include('include/header.php');
                                                     <td><?= $item['seats']; ?></td>
                                                     <td><?= $item['announced_on']; ?></td>
                                                     <td>
-                                                        <a href="" class="btn btn-sm btn-danger">
+                                                        <a href="remove-course.php?id=<?= $item['id']; ?>" class="btn btn-sm btn-danger">
                                                             Remove
                                                         </a>
                                                     </td>
