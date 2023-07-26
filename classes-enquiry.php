@@ -1,4 +1,7 @@
-<?php include('includes/header.php'); ?>
+<?php 
+include('includes/header.php'); 
+include('functions/userfunction.php');
+?>
 
 <main class="main">
     <div class="site-breadcrumb" style="background: url(images/about-us/me.jpg)">
@@ -11,7 +14,7 @@
         </div>
     </div>
 
-    <div class="service-area2 theme-bg-dark-2 py-120">
+    <div class="service-area2 theme-bg-dark-2 pt-120">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -76,6 +79,49 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="site-heading text-center">
+                    <span class="site-title-tagline">Recent Active Classes</span>
+                    <h2 class="site-title">
+    
+                    </h2>
+                </div>
+                <table class="table">
+                    <caption>List of Courses</caption>
+                    <thead>
+                        <tr>
+                        <th scope="col">Course No.</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Seats</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            $courses = getAllPrice('courses');
+
+                            if(mysqli_num_rows($courses) > 0) {
+                                foreach($courses as $item) {
+                                    ?>
+                                        <tr>
+                                            <td><?= $item['id']; ?></td>
+                                            <td><?= $item['course-name']; ?></td>
+                                            <td><?= $item['seats']; ?></td>
+                                        </tr>
+                                    <?php
+                                }
+                            }
+                            else {
+                                echo '<tr><td colspan="5" style="text-align: center;">No active courses!</td></tr>';
+                            }
+                        ?>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

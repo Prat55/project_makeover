@@ -11,7 +11,7 @@ include('include/header.php');
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<?php
-								$dash_service1 = getAll('category1');
+								$dash_service1 = getAll('ratecard');
 								
 								if($services_total1 = mysqli_num_rows($dash_service1)){
 									?>
@@ -40,7 +40,7 @@ include('include/header.php');
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<?php
-								$dash_service2 = getAll('category2');
+								$dash_service2 = getAll('ratecard');
 								
 								if($services_total2 = mysqli_num_rows($dash_service2)){
 									?>
@@ -69,7 +69,7 @@ include('include/header.php');
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<?php
-								$dash_service3 = getAll('category3');
+								$dash_service3 = getAll('ratecard');
 								
 								if($services_total3 = mysqli_num_rows($dash_service3)){
 									?>
@@ -98,7 +98,7 @@ include('include/header.php');
 					<div class="card-body">
 						<div class="d-flex align-items-center">
 							<?php
-								$dash_service4 = getAll('category4');
+								$dash_service4 = getAll('ratecard');
 								
 								if($services_total4 = mysqli_num_rows($dash_service4)){
 									?>

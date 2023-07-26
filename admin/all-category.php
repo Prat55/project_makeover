@@ -44,8 +44,6 @@ include('include/header.php');
                                 <?php
                                     $categories = "SELECT r.*,c.category AS category FROM ratecard r, categories c WHERE c.id = r.category_id";
                                     $categories_run = mysqli_query($con, $categories);
-                               
-                                    $category1 = getAll('category1');
 
                                     if(mysqli_num_rows($categories_run) > 0) {
                                         foreach($categories_run as $item) {
