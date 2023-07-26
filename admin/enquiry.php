@@ -38,7 +38,7 @@ include('include/header.php');
                             </thead>
                             <tbody>
                                 <?php
-                                    $formdata = getAll('form-data');
+                                    $formdata = getRev('form-data', 'recieved_on');
 
                                     if(mysqli_num_rows($formdata) > 0) {
                                         foreach($formdata as $item) {

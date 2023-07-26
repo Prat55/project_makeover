@@ -1,10 +1,24 @@
 <?php
     session_start();
-    include('../config/dbcon.php');
     include('../functions/myfunction.php');
 
     // * Adding Data in 1st Category
-    if(isset($_POST['add_category1_btn'])){
+    if(isset($_POST['add_category'])){
+        $category_id = $_POST['category_id'];
+        $service = $_POST['service'];
+        $price = $_POST['price'];
+
+        $query = "INSERT INTO `ratecard`(`category_id`, `service`, `price`) VALUES ('$category_id','$service','$price')";
+        $result = mysqli_query($con, $query);
+        
+        if($result){
+            redirect("add-category.php", "Category Added Successfully");
+        }
+        else{
+            redirect("add-category.php", "Category Not Added");
+        }
+    }
+    else if(isset($_POST['add_category1_btn'])){
         addCategory("category1");
     }
     // * Adding Data in 2nd Category

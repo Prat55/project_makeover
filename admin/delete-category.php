@@ -2,16 +2,13 @@
     session_start();
     include('../functions/myfunction.php');
 
-    if (isset($_GET['id']) && isset($_GET['service']) && isset($_GET['price']) && isset($_GET['table'])) {
+    if (isset($_GET['id'])) {
         $id = $_GET['id'];
-        $service = $_GET['service'];
-        $price = $_GET['price'];
-        $table = $_GET['table'];
 
-        $delete_query = "DELETE FROM $table WHERE id = $id AND service = '$service' AND price = '$price'";
+        $delete_query = "DELETE FROM `ratecard` WHERE `id` = '$id'";
         $delete_query_run = mysqli_query($con, $delete_query);
         
-        resetQuery("$table");
+        resetQuery("ratecard");
 
         if ($delete_query_run) {
             redirect("all-category.php", "Deleted Successfully");

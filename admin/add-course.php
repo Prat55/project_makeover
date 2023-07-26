@@ -65,7 +65,7 @@ include('include/header.php');
                             </thead>
                             <tbody>
                                 <?php
-                                    $courses = getAll('courses');
+                                    $courses = getRev('courses', 'announced_on');
 
                                     if(mysqli_num_rows($courses) > 0) {
                                         foreach($courses as $item) {

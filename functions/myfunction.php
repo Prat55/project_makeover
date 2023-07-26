@@ -9,6 +9,12 @@ function getAll($table){
     return $query_run = mysqli_query($con, $query);
 }
 
+function getRev($table, $column){
+    global $con;
+    $query = "SELECT * FROM `$table` ORDER BY `$column` DESC";
+    return $query_run = mysqli_query($con, $query);
+}
+
 //? get all images from database
 function getAllImages($table){
     global $con;

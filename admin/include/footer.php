@@ -57,6 +57,26 @@
         referrerpolicy="no-referrer">
     </script>    
     <script src="assets/js/custom.js"></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $("#fetchval").on("change", function () {
+                var value = $(this).val();
+                // alert(value);
+
+                $.ajax({
+                    url:"fetch.php",
+                    type:"POST",
+                    data: 'request =' + value;
+                    beforeSend:function(){
+                        $("#category_table").html("<span>Working...</span>");
+                    },
+                    success:function(data){
+                        $("#category_table").html(data);
+                    };
+                });
+            });
+        });
+    </script> -->
 </body>
 
 </html>

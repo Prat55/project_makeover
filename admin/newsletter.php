@@ -40,7 +40,7 @@ include('include/header.php');
                             </thead>
                             <tbody>
                             <?php
-                                    $newsletter = getAll('newsletter');
+                                    $newsletter = getRev('newsletter', 'recieved_on');
 
                                     if(mysqli_num_rows($newsletter) > 0) {
                                         foreach($newsletter as $item) {
