@@ -28,70 +28,34 @@ include('functions/userfunction.php');
                 <div class="pricing-area bg py-120">
                     <div class="regular-chart container">
                         <ul>
-                            <h2>Eyebrow and Forehead</h2>
                             <?php
-                                $category1 = getAllPrice('category1');
+                                $categories = "SELECT * FROM `categories`";
+                                $ratecard = "SELECT * FROM `ratecard`";
+                                $categories_run = mysqli_query($con, $categories);
+                                $ratecard_run = mysqli_query($con, $ratecard);
 
-                                if(mysqli_num_rows($category1) > 0) {
-                                    foreach($category1 as $item1) {
-                                        ?>
-                                            <li>
-                                                <p><?= $item1['service']; ?></p>
-                                                <span>Rs <?= $item1['price']; ?></span>
-                                            </li>
-                                        <?php
-                                    }
-                                }
-                            ?>
-                        </ul>
+                                if(mysqli_num_rows($categories_run) > 0) {
+                                    foreach($categories_run as $category){
+                                    ?>
+                            <h2><?= $category['category'] ?></h2>
 
-                        <ul>
-                            <h2>Wax-Honey</h2>
-                            <?php
-                                $category2 = getAllPrice('category2');
+                            <?php 
+                                if(mysqli_num_rows($ratecard_run)> 0) {
+                                    foreach($ratecard_run as $rate){
+                                        if(  $rate['category_id'] == $category['id']){
+                                ?>
 
-                                if(mysqli_num_rows($category2) > 0) {
-                                    foreach($category2 as $item2) {
-                                        ?>
-                                            <li>
-                                                <p><?= $item2['service']; ?></p>
-                                                <span>Rs <?= $item2['price']; ?></span>
-                                            </li>
-                                        <?php
-                                    }
-                                }
-                            ?>
-                        </ul>
-                        <ul>
-                            <h2>Wax-Richa,Creme,Chocolate,Beaan Wax</h2>
+                            <li>
+                                <p><?= $rate['service']; ?></p>
+                                <span>Rs <?= $rate['price']; ?></span>
+                            </li>
                             <?php
-                                $category3 = getAllPrice('category3');
-                            
-                                if(mysqli_num_rows($category3) > 0) {
-                                    foreach($category3 as $item3) {
-                                        ?>
-                                            <li>
-                                                <p><?= $item3['service']; ?></p>
-                                                <span>Rs <?= $item3['price']; ?></span>
-                                            </li>
-                                        <?php
+                                            }
+                                        }
                                     }
-                                }
-                            ?>
-                        </ul>
-                        <ul>
-                            <h2>Facial</h2>
-                            <?php
-                                $category4 = getAllPrice('category4');
-                            
-                                if(mysqli_num_rows($category4) > 0) {
-                                    foreach($category4 as $item4) {
                                         ?>
-                                            <li>
-                                                <p><?= $item4['service']; ?></p>
-                                                <span>Rs <?= $item4['price']; ?></span>
-                                            </li>
-                                        <?php
+
+                            <?php
                                     }
                                 }
                             ?>

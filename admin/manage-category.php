@@ -25,50 +25,40 @@ include('include/header.php');
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Rate Cards</h4>
+                        <h4>Categories</h4>
                     </div>
                     <!-- 1st Category -->
                     <div class="card-body">
-                        <input type="text" class="filter_rows form-control mb-3" placeholder="Search this table"
-                            data-for="1779746327">
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
                                     <th>Sr. No</th>
-                                    <th>Service</th>
                                     <th>Category</th>
-                                    <th>Price</th>
                                     <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                    $categories = "SELECT r.*,c.category AS category FROM ratecard r, categories c WHERE c.id = r.category_id";
-                                    $categories_run = mysqli_query($con, $categories);
+                                    $categories = getAll('categories');
 
-                                    if(mysqli_num_rows($categories_run) > 0) {
-                                        foreach($categories_run as $item) {
-                                            ?>
+                                    if(mysqli_num_rows($categories) > 0) {
+                                        foreach($categories as $item) {
+                                ?>
                                 <tr>
                                     <td><?= $item['id']; ?></td>
-                                    <td><?= $item['service']; ?></td>
                                     <td><?= $item['category']; ?></td>
-                                    <td>Rs. <?= $item['price']; ?></td>
                                     <td>
-                                        <a href="edit-subcategory.php?id=<?= $item['id']; ?>&category=<?= $item['category'] ?>&service=<?= $item['service'] ?>"
+                                        <a href="edit-category.php?id=<?= $item['id']; ?>"
                                             class="btn btn-sm btn-primary">
                                             Edit
                                         </a>
                                     </td>
                                     <td>
-                                        <a href="delete-subcategory.php?id=<?= $item['id']; ?>"
+                                        <a href="delete-category.php?id=<?= $item['id']; ?>"
                                             class="btn btn-sm btn-danger">
                                             Delete
                                         </a>
-                                        <!-- <button type="submit" class = "btn btn-sm btn-danger delete_product_btn1" name="delete_product_btn1">
-                                                            Delete
-                                                        </button> -->
                                     </td>
                                 </tr>
                                 <?php

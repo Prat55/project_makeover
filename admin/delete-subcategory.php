@@ -5,16 +5,16 @@
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
 
-        $delete_query = "DELETE FROM `categories` WHERE `id` = '$id'";
+        $delete_query = "DELETE FROM `ratecard` WHERE `id` = '$id'";
         $delete_query_run = mysqli_query($con, $delete_query);
         
-        resetQuery("categories");
+        resetQuery("ratecard");
 
         if ($delete_query_run) {
-            redirect("manage-category.php", "Deleted Successfully");
+            redirect("all-category.php", "Deleted Successfully");
         } 
         else {
-            redirect("manage-category.php", "Something went wrong! Please try again later");
+            redirect("all-category.php", "Something went wrong! Please try again later");
         }
     }
 ?>

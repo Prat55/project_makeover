@@ -8,7 +8,7 @@ include('includes/login_header.php');
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
                 <div class="col mx-auto">
-                <?php if (isset($_SESSION['message'])) { ?>
+                    <?php if (isset($_SESSION['message'])) { ?>
                     <div class="alert border-0 alert-dismissible fade show py-2">
                         <div class="d-flex align-items-center">
                             <div class="font-35 text-white"><i class='bx bxs-check-circle'></i></div>
@@ -19,7 +19,7 @@ include('includes/login_header.php');
                         </div>
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
-                <?php
+                    <?php
                     unset($_SESSION['message']);
                 }
                 ?>
@@ -27,7 +27,7 @@ include('includes/login_header.php');
                         <div class="card-body">
                             <div class="p-4">
                                 <div class="mb-3 text-center">
-                                    <img src="assets/images/logo-icon.png" width="60" alt="" />
+                                    <img src="assets/img/logo/rosh logo.svg" width="120" alt="" />
                                 </div>
                                 <div class="text-center mb-4">
                                     <h5 class="">Admin Login</h5>

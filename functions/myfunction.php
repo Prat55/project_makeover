@@ -15,17 +15,17 @@ function getRev($table, $column){
     return $query_run = mysqli_query($con, $query);
 }
 
-//? get all images from database
-function getAllImages($table){
+// ? For edit category from categories table
+function getCategory($table, $id){
     global $con;
-    $image_query = "SELECT * FROM `$table`";
-    return $image_query_run = mysqli_query($con, $image_query);
+    $query = "SELECT * FROM `$table` WHERE `id` = '$id'";
+    return $query_run = mysqli_query($con, $query);
 }
 
 //? help to match specific service and id column from table 
 function getByService($table, $id, $service){
     global $con;
-    $query = "SELECT * FROM `$table` WHERE id = '$id' AND service = '$service'";
+    $query = "SELECT * FROM `$table` WHERE `id` = '$id' AND `service` = '$service'";
     return $query_run = mysqli_query($con, $query);
 }
 
@@ -43,12 +43,11 @@ function resetQuery($table){
 // ? Adding data to table category1,2,3,4
 function addCategory($tableName){
     global $con;
-    $service = $_POST['service'];
-    $price = $_POST['price'];
+    $category = $_POST['categories'];
 
     // Checking if the service is null or not
-    if($service == ""){
-        echo "<script>alert('Service is required');</script>";
+    if($category == ""){
+        echo "<script>alert('Category is required');</script>";
     }
 
     // Checking if the price is null or not
@@ -60,7 +59,7 @@ function addCategory($tableName){
     else{
         resetQuery("$tableName");
 
-        $cate_query = "INSERT INTO `$tableName`(`service`, `price`) VALUES ('$service','$price')";
+        $cate_query = "INSERT INTO `$tableName`(`category`) VALUES ('$category')";
         $cate_query_run = mysqli_query($con, $cate_query);
 
         if($cate_query_run){
@@ -76,7 +75,34 @@ function addCategory($tableName){
 function updateCategory($tableName){
     global $con;
     $id = $_POST['id'];
+    $category = $_POST['category'];
+
+    // Checking if the service is null or not
+    if($category == ""){
+        echo "<script>alert('Category is required');</script>";
+    }
+    // Updating data in database
+    else{
+        resetQuery("$tableName");
+        
+        $update_query = "UPDATE `$tableName` SET `category` = '$category' WHERE `id` = '$id'";
+        $update_query_run = mysqli_query($con, $update_query);
+
+        if($update_query_run){
+            redirect("manage-category.php", "Category Updated Successfully");
+        }
+        else{
+            redirect("manage-category.php", "Something Went Wrong!");
+        }
+    }
+}
+
+// ?Updating data of table category1,2,3,4
+function updateSubCategory($tableName){
+    global $con;
+    $id = $_POST['id'];
     $service = $_POST['service'];
+    $category_id = $_POST['category_id'];
     $price = $_POST['price'];
 
     // Checking if the service is null or not
@@ -89,8 +115,9 @@ function updateCategory($tableName){
     }
     // Updating data in database
     else{
+        resetQuery("$tableName");
         
-        $update_query = "UPDATE `$tableName` SET service = '$service', price = '$price' WHERE id = '$id'";
+        $update_query = "UPDATE `$tableName` SET `service` = '$service', `price` = '$price' WHERE `id` = '$id'";
         $update_query_run = mysqli_query($con, $update_query);
 
         if($update_query_run){

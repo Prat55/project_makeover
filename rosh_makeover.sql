@@ -42,7 +42,7 @@ VALUES
 (1, 1,'Eyebrow', '30'),
 (2, 1,'Forehead and Uperlips', '50'),
 (3, 2,'Hand Wax', '150'),
-(4, 2,'Underarms', '50'),
+(4, 2,'Underarms', '50'),   
 (5, 2,'Body Wax', '600'),
 (6, 2,'leg Wax(Half)', '200'),
 (7, 2,'Leg Wax(Full)', '350'),

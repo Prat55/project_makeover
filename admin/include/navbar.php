@@ -2,42 +2,54 @@
 <header>
     <div class="topbar d-flex align-items-center">
         <nav class="navbar navbar-expand gap-3">
-            <div class="mobile-toggle-menu">
-                <a href="index.php" class="<?= $page == 'index.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
-                </a>
-            </div>
-            <div class="mobile-toggle-menu">
-                <a href="all-category.php" class="<?= $page == 'all-category.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-cart"></i></div>
-                </a>
-            </div>
-            <div class="mobile-toggle-menu">
-                <a href="gallery.php" class="<?= $page == 'gallery.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-photo-album"></i></div>
-                </a>
-            </div>
-            <div class="mobile-toggle-menu">
-                <a href="add-category.php" class="<?= $page == 'add-category.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
-                </a>
-            </div>
-            <div class="mobile-toggle-menu">
-                <a href="newsletter.php" class="<?= $page == 'newsletter.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-news"></i></div>
-                </a>
-            </div>
-            <div class="mobile-toggle-menu">
-                <a href="enquiry.php" class="<?= $page == 'enquiry.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-comment-detail"></i></div>
-                </a>
-            </div>
-            <div class="mobile-toggle-menu">
-                <a href="add-course.php" class="<?= $page == 'add-course.php'? "active":"" ?>">
-                    <div class="parent-icon"><i class="bx bx-collection"></i></div>
-                </a>
-            </div>
+            <div class="scroll-con">
+                <div class="mobile-toggle-menu">
+                    <a href="index.php" class="<?= $page == 'index.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-home-alt"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="all-category.php" class="<?= $page == 'all-category.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-cart"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="gallery.php" class="<?= $page == 'gallery.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-photo-album"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="add-category.php" class="<?= $page == 'add-category.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-plus"></i></div>
+                    </a>
+                </div>
 
+                <div class="mobile-toggle-menu">
+                    <a href="manage-category.php" class="<?= $page == 'manage-category.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-folder-open"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="add-subcategory.php" class="<?= $page == 'add-subcategory.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="newsletter.php" class="<?= $page == 'newsletter.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-news"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="enquiry.php" class="<?= $page == 'enquiry.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-comment-detail"></i></div>
+                    </a>
+                </div>
+                <div class="mobile-toggle-menu">
+                    <a href="add-course.php" class="<?= $page == 'add-course.php'? "active":"" ?>">
+                        <div class="parent-icon"><i class="bx bx-collection"></i></div>
+                    </a>
+                </div>
+            </div>
             <div class="top-menu ms-auto"></div>
             <div class="user-box dropdown px-3">
                 <a class="d-flex align-items-center nav-link dropdown-toggle gap-3 dropdown-toggle-nocaret" href="#"

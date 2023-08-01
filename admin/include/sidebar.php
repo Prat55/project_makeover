@@ -3,7 +3,7 @@
 ?>
 <!--wrapper-->
 <div class="wrapper">
-<!--sidebar wrapper -->
+    <!--sidebar wrapper -->
     <div class="sidebar-wrapper" data-simplebar="true">
         <div class="sidebar-header">
             <div>
@@ -35,8 +35,20 @@
             </li>
             <li>
                 <a href="add-category.php" class="<?= $page == 'add-category.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-plus"></i></div>
+                    <div class="menu-title">Add Category</div>
+                </a>
+            </li>
+            <li>
+                <a href="manage-category.php" class="<?= $page == 'manage-category.php'? "active":"" ?>">
+                    <div class="parent-icon"><i class="bx bx-folder-open"></i></div>
+                    <div class="menu-title">Manage category</div>
+                </a>
+            </li>
+            <li>
+                <a href="add-subcategory.php" class="<?= $page == 'add-subcategory.php'? "active":"" ?>">
                     <div class="parent-icon"><i class="bx bx-cart-add"></i></div>
-                    <div class="menu-title">All Category</div>
+                    <div class="menu-title">Add Rate Card</div>
                 </a>
             </li>
             <li>
@@ -60,5 +72,4 @@
         </ul>
         <!--end navigation-->
     </div>
-<!--end sidebar wrapper -->
-
+    <!--end sidebar wrapper -->

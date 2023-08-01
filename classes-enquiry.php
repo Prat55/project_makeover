@@ -89,16 +89,17 @@ include('functions/userfunction.php');
                 <div class="site-heading text-center">
                     <span class="site-title-tagline">Recent Active Classes</span>
                     <h2 class="site-title">
-    
+
                     </h2>
                 </div>
                 <table class="table">
                     <caption>List of Courses</caption>
                     <thead>
                         <tr>
-                        <th scope="col">Course No.</th>
-                        <th scope="col">Course</th>
-                        <th scope="col">Seats</th>
+                            <th scope="col">Course No.</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Seats</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -108,12 +109,15 @@ include('functions/userfunction.php');
                             if(mysqli_num_rows($courses) > 0) {
                                 foreach($courses as $item) {
                                     ?>
-                                        <tr>
-                                            <td><?= $item['id']; ?></td>
-                                            <td><?= $item['course-name']; ?></td>
-                                            <td><?= $item['seats']; ?></td>
-                                        </tr>
-                                    <?php
+                        <tr>
+                            <td><?= $item['id']; ?></td>
+                            <td><?= $item['course-name']; ?></td>
+                            <td><?= $item['seats']; ?></td>
+                            <td>
+                                <a href="https://wa.me/918412098675" target="_blank" class="theme-btn">Apply</a>
+                            </td>
+                        </tr>
+                        <?php
                                 }
                             }
                             else {

@@ -23,14 +23,16 @@ include('include/header.php');
         ?>
             <div class="col-md-12">
                 <?php 
-                if (isset($_GET['id']))
+                if (isset($_GET['id']) && isset($_GET['category']) && isset($_GET['service']))
                 {
                     $id = $_GET['id'];
+                    $service = $_GET['service'];
+                    $category = $_GET['category'];
 
-                    $categories = getCategory('categories',$id);
+                    $ratecard = getByService('ratecard',$id,$service);
 
-                    if(mysqli_num_rows($categories) > 0){
-                        $data = mysqli_fetch_array($categories);
+                    if(mysqli_num_rows($ratecard) > 0){
+                        $data = mysqli_fetch_array($ratecard);
                     ?>
                 <div class="card">
                     <div class="card-header">
@@ -39,17 +41,25 @@ include('include/header.php');
 
                     <form action="code.php" method="post">
                         <div class="card-body">
+                            <h4>
+                                <?= $category; ?>
+                            </h4>
                             <div class="row">
                                 <div class="col-md-5">
                                     <input type="hidden" name="id" value="<?= $data['id']; ?>">
-                                    <label>Category Name</label>
-                                    <input type="text" name="category" value="<?= $data['category']; ?>"
+                                    <label>Service</label>
+                                    <input type="text" name="service" value="<?= $data['service']; ?>"
                                         class="form-control" required>
+                                </div>
+                                <div class="col-md-5">
+                                    <label>Price</label>
+                                    <input type="text" name="price" value="<?= $data['price']; ?>" class="form-control"
+                                        required>
                                 </div>
                                 <div class="col-md-2">
                                     <br>
                                     <button type="submit" class="btn btn-primary"
-                                        name="update_category_btn">Update</button>
+                                        name="update_sub_category_btn">Update</button>
                                 </div>
                             </div>
                         </div>

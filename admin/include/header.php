@@ -26,42 +26,50 @@
     <title>Roshni - Makeup Artist | Admin</title>
 
     <style>
-        .bg-green{
-            background-color: #198754;
-            color: #fff;
-        }
+    .bg-green {
+        background-color: #198754;
+        color: #fff;
+    }
 
-        .active{
-            background: #3f4a4f;
-        }
-        
-        .gallery-collection img{
-            height: 100px;
-            width: 100px;
-            margin: 20px;
-        }
+    .active {
+        background: #3f4a4f;
+    }
 
-        .navitem{
-            height: 0px;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            background: rgba(0, 0, 0, 0.2);
-            top: 58px;
-            overflow: hidden;
-        }
+    .gallery-collection img {
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+    }
 
-        .mobile-toggle-menu{
-            position: relative;
-        }
+    .navitem {
+        height: 0px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background: rgba(0, 0, 0, 0.2);
+        top: 58px;
+        overflow: hidden;
+    }
 
-        .mobile-toggle-menu:hover .navitem{
-            height: 200px;
-        }
+    .mobile-toggle-menu {
+        position: relative;
+    }
+
+    .mobile-toggle-menu:hover .navitem {
+        height: 200px;
+    }
+
+    .scroll-con {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        overflow-y: scroll;
+    }
     </style>
 </head>
 
 <body class="bg-theme bg-theme2 pace-done">
-    
+
     <?php include('sidebar.php'); ?>
     <?php include('navbar.php'); ?>
