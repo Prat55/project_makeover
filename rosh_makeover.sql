@@ -17,67 +17,51 @@ INSERT INTO `rosh-credentials` (`email`, `password`) VALUES ('admin@gmail.com', 
 
 --  Creating table for categories
 
-CREATE TABLE `category1` (
+CREATE TABLE `categories` (
+  `id` int(11)  not null auto_increment primary key,
+  `category` varchar(191) NOT NULL,
+  `created_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin7;
+
+INSERT INTO `categories` (`id`,`category`) 
+VALUES 
+(1,'Eyebrow and Forehead' ),
+(2,'Wax-Honey'),
+(3,'Wax-Richa,Creme,Chocolate,Beaan Wax'),
+(4,'Facial');
+
+CREATE TABLE `ratecard` (
   `id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
   `service` varchar(191) NOT NULL,
   `price` varchar(191) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
-INSERT INTO `category1` (`id`,`service`, `price`) 
+INSERT INTO `ratecard` (`id`, `category_id`,`service`, `price`) 
 VALUES 
-(1,'Eyebrow', '30'),
-(2,'Forehead and Uperlips', '50');
-
-
-CREATE TABLE `category2` (
-  `id` int(11) NOT NULL,
-  `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin7;
-
-INSERT INTO `category2` (`id`,`service`, `price`) 
-VALUES 
-(1,'Hand Wax', '150'),
-(2,'Underarms', '50'),
-(3,'Body Wax', '600'),
-(4,'leg Wax(Half)', '200'),
-(5,'Leg Wax(Full)', '350'),
-(6,'Face Wax', '100');
-
-
-CREATE TABLE `category3` (
-  `id` int(11) NOT NULL,
-  `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin7;
-
-INSERT INTO `category3` (`id`,`service`, `price`) 
-VALUES 
-(1,'Hand Wax', '100'),
-(2,'Underarms', '300'),
-(3,'leg Wax(Half)', '500'),
-(4,'Leg Wax(Full)', '800'),
-(5,'Body Wax', '1200'),
-(6,'Face Wax', '200');
-
-
-CREATE TABLE `category4` (
-  `id` int(11) NOT NULL,
-  `service` varchar(191) NOT NULL,
-  `price` varchar(191) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin7;
-
-INSERT INTO `category4` (`id`,`service`, `price`) 
-VALUES 
-(1,'Clean Up(Fruit)', '200'),
-(2,'Fruit Facial', '400'),
-(3,'Lotus Facial', '800'),
-(4,'RichFeel Facial', '1000'),
-(5,'Cheryls Facial', '800'),
-(6,'O3', '1500-2000'),
-(7,'Raga Facial', '700'),
-(8,'Oxyglow', '500'),
-(9,'VLCC', '600');
+(1, 1,'Eyebrow', '30'),
+(2, 1,'Forehead and Uperlips', '50'),
+(3, 2,'Hand Wax', '150'),
+(4, 2,'Underarms', '50'),
+(5, 2,'Body Wax', '600'),
+(6, 2,'leg Wax(Half)', '200'),
+(7, 2,'Leg Wax(Full)', '350'),
+(8, 2,'Face Wax', '100'),
+(9, 3,'Hand Wax', '100'),
+(10, 3,'Underarms', '300'),
+(11, 3,'leg Wax(Half)', '500'),
+(12, 3,'Leg Wax(Full)', '800'),
+(13, 3,'Body Wax', '1200'),
+(14, 3,'Face Wax', '200'),
+(15, 4,'Clean Up(Fruit)', '200'),
+(16, 4,'Fruit Facial', '400'),
+(17, 4,'Lotus Facial', '800'),
+(18, 4,'RichFeel Facial', '1000'),
+(19, 4,'Cheryls Facial', '800'),
+(20, 4,'O3', '1500-2000'),
+(21, 4,'Raga Facial', '700'),
+(22, 4,'Oxyglow', '500'),
+(23, 4,'VLCC', '600');
 
 
 CREATE TABLE `images` (
@@ -137,33 +121,19 @@ CREATE TABLE `courses` (
   `announced_on` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin7;
 
+
+
 --
--- Indexes for table `category1`
+-- Indexes for table `categories`
 --
-ALTER TABLE `category1`
+ALTER TABLE `ratecard`
   ADD PRIMARY KEY (`id`);
 
-
---
--- Indexes for table `category2`
---
-ALTER TABLE `category2`
-  ADD PRIMARY KEY (`id`);
-
-
---
--- Indexes for table `category3`
---
-ALTER TABLE `category3`
-  ADD PRIMARY KEY (`id`);
-
-
---
--- Indexes for table `category4`
---
-ALTER TABLE `category4`
-  ADD PRIMARY KEY (`id`);
-
+ALTER TABLE `ratecard`
+  ADD FOREIGN KEY fk_category(category_id)
+  REFERENCES categories(id)
+  ON DELETE NO ACTION
+  ON UPDATE CASCADE;
 
 --
 -- Indexes for table `images`
@@ -193,37 +163,15 @@ ALTER TABLE `courses`
   ADD PRIMARY KEY (`id`);
 
 
---
--- AUTO_INCREMENT for table `category1`
---
-ALTER TABLE `category1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `categories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 
+ALTER TABLE `ratecard`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
--- AUTO_INCREMENT for table `category2`
---
-ALTER TABLE `category2`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
-
---
--- AUTO_INCREMENT for table `category3`
---
-ALTER TABLE `category3`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
-
---
--- AUTO_INCREMENT for table `category4`
---
-ALTER TABLE `category4`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
-
---
--- AUTO_INCREMENT for table `images`
---
+-- AUTO_INCREMENT for table ``
+--images
 ALTER TABLE `images`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
