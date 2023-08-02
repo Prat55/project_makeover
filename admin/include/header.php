@@ -66,11 +66,6 @@
             gap: 10px;
             overflow-y: scroll;
         }
-
-        .page-wrapper{
-            overflow-x: scroll;
-        }
-
         
         ::-webkit-scrollbar {
         width: 3px;
@@ -83,7 +78,7 @@
 
         ::-webkit-scrollbar-thumb {
         background-color: #434141;
-        border-radius: 40px;
+        border-radius: 30px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
