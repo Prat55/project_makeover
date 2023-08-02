@@ -7,21 +7,7 @@ include('include/header.php');
 <div class="page-wrapper">
     <div class="page-content">
         <div class="row">
-            <?php if (isset($_SESSION['message'])) { ?>
-            <div class="alert border-0 alert-dismissible fade show py-2">
-                <div class="d-flex align-items-center">
-                    <div class="font-35 text-white"><i class='bx bxs-check-circle'></i></div>
-                    <div class="ms-3">
-                        <h6 class="mb-0 text-white"><?= $_SESSION['message']; ?></h6>
-                        <!-- <div class="text-white">A simple success alert—check it out!</div> -->
-                    </div>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php
-            unset($_SESSION['message']);
-        }
-        ?>
+        <?php include('message.php') ?>
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
@@ -29,8 +15,10 @@ include('include/header.php');
                     </div>
                     <!-- 1st Category -->
                     <div class="card-body">
-                        <input type="text" class="filter_rows form-control mb-3" placeholder="Search this table"
-                            data-for="1779746327">
+                        <form action="" class="pb-4">
+                            <input type="text" class="filter_rows form-control mb-3" placeholder="Search this subcategories" data-for="1779746327">
+                            <button type="submit" class="btn btn-sm btn-secondary">Search</button>
+                        </form>
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>

@@ -64,11 +64,12 @@
             justify-content: start;
             align-items: center;
             gap: 10px;
-            overflow-y: scroll;
+            overflow: scroll;
         }
         
         ::-webkit-scrollbar {
         width: 3px;
+        height: 3px;
         background-color: transparent;
         }
 
@@ -83,6 +84,10 @@
 
         ::-webkit-scrollbar-thumb:hover {
         background-color: #5e5b5b;
+        }
+
+        .card{
+            overflow: scroll;
         }
     </style>
 </head>

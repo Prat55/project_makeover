@@ -6,21 +6,7 @@ include('include/header.php');
 <div class="page-wrapper">
     <div class="page-content">
         <div class="row">
-            <?php if (isset($_SESSION['message'])) { ?>
-            <div class="alert border-0 alert-dismissible fade show py-2">
-                <div class="d-flex align-items-center">
-                    <div class="font-35 text-white"><i class='bx bxs-check-circle'></i></div>
-                    <div class="ms-3">
-                        <h6 class="mb-0 text-white"><?= $_SESSION['message']; ?></h6>
-                        <!-- <div class="text-white">A simple success alert—check it out!</div> -->
-                    </div>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            <?php
-            unset($_SESSION['message']);
-        }
-        ?>
+            <?php include('message.php'); ?>
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
