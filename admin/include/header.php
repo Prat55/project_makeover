@@ -26,46 +26,69 @@
     <title>Roshni - Makeup Artist | Admin</title>
 
     <style>
-    .bg-green {
-        background-color: #198754;
-        color: #fff;
-    }
+        .bg-green {
+            background-color: #198754;
+            color: #fff;
+        }
 
-    .active {
-        background: #3f4a4f;
-    }
+        .active {
+            background: #3f4a4f;
+        }
 
-    .gallery-collection img {
-        height: 100px;
-        width: 100px;
-        margin: 20px;
-    }
+        .gallery-collection img {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+        }
 
-    .navitem {
-        height: 0px;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        background: rgba(0, 0, 0, 0.2);
-        top: 58px;
-        overflow: hidden;
-    }
+        .navitem {
+            height: 0px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            background: rgba(0, 0, 0, 0.2);
+            top: 58px;
+            overflow: hidden;
+        }
 
-    .mobile-toggle-menu {
-        position: relative;
-    }
+        .mobile-toggle-menu {
+            position: relative;
+        }
 
-    .mobile-toggle-menu:hover .navitem {
-        height: 200px;
-    }
+        .mobile-toggle-menu:hover .navitem {
+            height: 200px;
+        }
 
-    .scroll-con {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 10px;
-        overflow-y: scroll;
-    }
+        .scroll-con {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            overflow-y: scroll;
+        }
+
+        .page-wrapper{
+            overflow-x: scroll;
+        }
+
+        
+        ::-webkit-scrollbar {
+        width: 3px;
+        background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-track {
+        background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+        background-color: #434141;
+        border-radius: 40px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+        background-color: #5e5b5b;
+        }
     </style>
 </head>
 
