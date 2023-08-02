@@ -26,10 +26,10 @@ if (isset($_POST['login-btn'])) {
             'email' => $useremail,
         ];
 
-        redirect("../admin/index.php", "Login Successfully");
+        redirect("../admin/index.php", "success", "Login Successfully");
 
     } else {
-        redirect("../login.php", "Invalid Credentials!");
+        redirect("../login.php", "error", "Invalid Credentials!");
     }
 
 }

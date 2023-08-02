@@ -17,10 +17,10 @@ if(isset($_GET['id'])){
     $result = mysqli_query($con, $query);
     
     if($result){
-        redirect("add-course.php", "Course Deleted Successfully");
+        redirect("add-course.php", "success", "Course Deleted Successfully");
     }
     else{
-        redirect("add-course.php", "Course Not Deleted");
+        redirect("add-course.php", "error", "Course Not Deleted");
     }
 }
 

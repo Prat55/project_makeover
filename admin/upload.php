@@ -42,15 +42,15 @@
                 //? Insert image file name into database 
                 $insert = $con->query("INSERT INTO images (file_name, uploaded_on) VALUES $insertValuesSQL"); 
                 if($insert){ 
-                    redirect("gallery.php", "Files are uploaded successfully.");
+                    redirect("gallery.php", "success", "Files are uploaded successfully.");
                 }else{ 
-                    redirect("gallery.php", "Sorry, there was an error uploading your file.");
+                    redirect("gallery.php", "error", "Sorry, there was an error uploading your file.");
                 } 
             }else{ 
-                redirect("gallery.php", "Upload failed!");
+                redirect("gallery.php", "error", "Upload failed!");
             } 
         }else{ 
-            redirect("gallery.php", "Please select a file to upload."); 
+            redirect("gallery.php", "error", "Please select a file to upload."); 
         } 
     }
      

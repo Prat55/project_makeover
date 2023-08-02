@@ -63,10 +63,10 @@ function addCategory($tableName){
         $cate_query_run = mysqli_query($con, $cate_query);
 
         if($cate_query_run){
-            redirect("add-category.php", "Category Added Successfully");
+            redirect("add-category.php", "success", "Category Added Successfully");
         }
         else{
-            redirect("add-category.php", "Something Went Wrong!");
+            redirect("add-category.php", "error", "Something Went Wrong!");
         }
     }
 }
@@ -89,10 +89,10 @@ function updateCategory($tableName){
         $update_query_run = mysqli_query($con, $update_query);
 
         if($update_query_run){
-            redirect("manage-category.php", "Category Updated Successfully");
+            redirect("manage-category.php", "success", "Category Updated Successfully");
         }
         else{
-            redirect("manage-category.php", "Something Went Wrong!");
+            redirect("manage-category.php", "error", "Something Went Wrong!");
         }
     }
 }
@@ -121,10 +121,10 @@ function updateSubCategory($tableName){
         $update_query_run = mysqli_query($con, $update_query);
 
         if($update_query_run){
-            redirect("all-category.php", "Category Updated Successfully");
+            redirect("all-category.php", "success", "Category Updated Successfully");
         }
         else{
-            redirect("all-category.php", "Something Went Wrong!");
+            redirect("all-category.php", "error", "Something Went Wrong!");
         }
     }
 }
@@ -152,17 +152,18 @@ function addCources($tableName){
         $cate_query_run = mysqli_query($con, $cate_query);
 
         if($cate_query_run){
-            redirect("add-course.php", "Category Added Successfully");
+            redirect("add-course.php", "success", "Category Added Successfully");
         }
         else{
-            redirect("add-course.php", "Something Went Wrong!");
+            redirect("add-course.php", "error", "Something Went Wrong!");
         }
     }
 }
 
 // use for redirecting to specific page
-function redirect($url, $message)
+function redirect($url, $mode, $message)
 {
+    $_session['message'] = $mode;
     $_SESSION['message'] = $message;
     header("Location: $url");
     exit();

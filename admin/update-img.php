@@ -15,9 +15,9 @@
         $delete = $con->query("UPDATE FROM `images` SET file_name = $file_name WHERE id = '$id'");
         
         if($delete){
-            redirect("gallery.php", "File deleted successfully.");
+            redirect("gallery.php", "success", "File deleted successfully.");
         }else{
-            redirect("gallery.php", "Sorry, there was an error deleting your file.");
+            redirect("gallery.php", "error", "Sorry, there was an error deleting your file.");
         }
     }
 

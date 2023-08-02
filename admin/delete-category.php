@@ -11,10 +11,10 @@
         resetQuery("categories");
 
         if ($delete_query_run) {
-            redirect("manage-category.php", "Deleted Successfully");
+            redirect("manage-category.php", "success", "Deleted Successfully");
         } 
         else {
-            redirect("manage-category.php", "Something went wrong! Please try again later");
+            redirect("manage-category.php", "error", "Something went wrong! Please try again later");
         }
     }
 ?>

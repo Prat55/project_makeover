@@ -18,9 +18,9 @@
         $form_query_run = mysqli_query($con, $form_query);
 
         if($form_query_run){
-            redirect("../index.php" , "Form Submit Successfully");
+            redirect("../index.php" , "success", "Form Submit Successfully");
         }else{
-            redirect("../index.php" , "Failed to submit form");
+            redirect("../index.php" , "error", "Failed to submit form");
         }
     }
     else if(isset($_GET['id'])){
@@ -28,10 +28,10 @@
         $delete_query = "DELETE FROM `form-data` WHERE id = '$id'";
         $delete_query_run = mysqli_query($con, $delete_query);
         if($delete_query_run){
-            redirect("../admin/enquiry.php", "Deleted Successfully");
+            redirect("../admin/enquiry.php", "success", "Deleted Successfully");
         }
         else{
-            redirect("../admin/enquiry.php", "Something went wrong!");
+            redirect("../admin/enquiry.php", "error", "Something went wrong!");
         }
     }
 ?>

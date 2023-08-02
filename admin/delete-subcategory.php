@@ -11,10 +11,10 @@
         resetQuery("ratecard");
 
         if ($delete_query_run) {
-            redirect("all-category.php", "Deleted Successfully");
+            redirect("all-category.php", "success", "Deleted Successfully");
         } 
         else {
-            redirect("all-category.php", "Something went wrong! Please try again later");
+            redirect("all-category.php", "error", "Something went wrong! Please try again later");
         }
     }
 ?>

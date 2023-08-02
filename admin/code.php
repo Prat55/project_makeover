@@ -12,10 +12,10 @@
         $result = mysqli_query($con, $query);
         
         if($result){
-            redirect("add-category.php", "Category Added Successfully");
+            redirect("add-category.php", "success","Category Added Successfully");
         }
         else{
-            redirect("add-category.php", "Category Not Added");
+            redirect("add-category.php", "error", "Category Not Added");
         }
     }
     else if(isset($_POST['add_subcategory'])){
@@ -28,10 +28,10 @@
         $result = mysqli_query($con, $query);
         
         if($result){
-            redirect("add-subcategory.php", "Category Added Successfully");
+            redirect("add-subcategory.php", "success", "Category Added Successfully");
         }
         else{
-            redirect("add-subcategory.php", "Category Not Added");
+            redirect("add-subcategory.php", "error", "Category Not Added");
         }
     }
     // * Update data in category tables
