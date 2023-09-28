@@ -1,4 +1,4 @@
-<?php 
+<?php
 include('../middleware/adminMiddleware.php');
 include('include/header.php');
 ?>
@@ -11,21 +11,21 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service1 = getAll('ratecard');
-								$dash_category = getAll('categories');
-								
-								if($services_total1 = mysqli_num_rows($dash_service1)){
-									?>
-                            <h5 class="mb-0"><?= $services_total1 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Data Found!</h5>
-                            <?php
-								}
+                            $dash_service1 = "SELECT * FROM ratecard WHERE category_id  = 1";
+                            $service1 = mysqli_query($con, $dash_service1);
+                            $dash_category = getAll('categories');
 
-							?>
+                            if ($services_total1 = mysqli_num_rows($service1)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total1 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
                                 <i class='bx bx-price fs-3 text-white'></i>
 							</div> -->
@@ -41,20 +41,20 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service2 = getAll('ratecard');
-								
-								if($services_total2 = mysqli_num_rows($dash_service2)){
-									?>
-                            <h5 class="mb-0"><?= $services_total2 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Data Found!</h5>
-                            <?php
-								}
+                            $dash_service2 = "SELECT * FROM ratecard WHERE category_id  = 2";
+                            $service2 = mysqli_query($con, $dash_service2);
 
-							?>
+                            if ($services_total2 = mysqli_num_rows($service2)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total2 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
 								<i class='bx bx-cart fs-3 text-white'></i>
 							</div> -->
@@ -70,20 +70,20 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service3 = getAll('ratecard');
-								
-								if($services_total3 = mysqli_num_rows($dash_service3)){
-									?>
-                            <h5 class="mb-0"><?= $services_total3 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Data Found!</h5>
-                            <?php
-								}
+                            $dash_service3 = "SELECT * FROM ratecard WHERE category_id  = 3";
+                            $service3 = mysqli_query($con, $dash_service3);
 
-							?>
+                            if ($services_total3 = mysqli_num_rows($service3)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total3 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
 								<i class='bx bx-cart fs-3 text-white'></i>
 							</div> -->
@@ -99,20 +99,20 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service4 = getAll('ratecard');
-								
-								if($services_total4 = mysqli_num_rows($dash_service4)){
-									?>
-                            <h5 class="mb-0"><?= $services_total4 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Data Found!</h5>
-                            <?php
-								}
+                            $dash_service4 = "SELECT * FROM ratecard WHERE category_id  = 4";
+                            $service4 = mysqli_query($con, $dash_service4);
 
-							?>
+                            if ($services_total4 = mysqli_num_rows($service4)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total4 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
 								<i class='bx bx-cart fs-3 text-white'></i>
 							</div> -->
@@ -134,20 +134,19 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service5 = getAll('images');
-								
-								if($services_total5 = mysqli_num_rows($dash_service5)){
-									?>
-                            <h5 class="mb-0"><?= $services_total5 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Data Found!</h5>
-                            <?php
-								}
+                            $dash_service5 = getAll('images');
 
-							?>
+                            if ($services_total5 = mysqli_num_rows($dash_service5)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total5 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
                                 <i class='bx bx-price fs-3 text-white'></i>
 							</div> -->
@@ -163,20 +162,19 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service6 = getAll('newsletter');
-								
-								if($services_total6 = mysqli_num_rows($dash_service6)){
-									?>
-                            <h5 class="mb-0"><?= $services_total6 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Data Found!</h5>
-                            <?php
-								}
+                            $dash_service6 = getAll('newsletter');
 
-							?>
+                            if ($services_total6 = mysqli_num_rows($dash_service6)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total6 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
 								<i class='bx bx-cart fs-3 text-white'></i>
 							</div> -->
@@ -192,20 +190,19 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service7 = getAll('form-data');
-								
-								if($services_total7 = mysqli_num_rows($dash_service7)){
-									?>
-                            <h5 class="mb-0"><?= $services_total7 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No Recent Enquiries!</h5>
-                            <?php
-								}
+                            $dash_service7 = getAll('form-data');
 
-							?>
+                            if ($services_total7 = mysqli_num_rows($dash_service7)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total7 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
 								<i class='bx bx-cart fs-3 text-white'></i>
 							</div> -->
@@ -221,20 +218,19 @@ include('include/header.php');
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <?php
-								$dash_service8 = getAll('courses');
-								
-								if($services_total8 = mysqli_num_rows($dash_service8)){
-									?>
-                            <h5 class="mb-0"><?= $services_total8 ?></h5>
-                            <?php
-								}
-								else{
-									?>
-                            <h5 class="mb-0 fs-6">No active courses found!</h5>
-                            <?php
-								}
+                            $dash_service8 = getAll('courses');
 
-							?>
+                            if ($services_total8 = mysqli_num_rows($dash_service8)) {
+                            ?>
+                                <h5 class="mb-0"><?= $services_total8 ?></h5>
+                            <?php
+                            } else {
+                            ?>
+                                <h5 class="mb-0 fs-6">0</h5>
+                            <?php
+                            }
+
+                            ?>
                             <!-- <div class="ms-auto">
 								<i class='bx bx-cart fs-3 text-white'></i>
 							</div> -->
