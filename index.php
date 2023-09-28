@@ -213,7 +213,7 @@ include('functions/userfunction.php');
 
                 <div class="col-md-6 col-lg-4">
                     <div class="service-item">
-                        <div class="service-icon">
+                        <div class="service-icon dress">
                             <img src="assets/img/services/fashion.png" alt="">
                         </div>
                         <div class="service-content">
