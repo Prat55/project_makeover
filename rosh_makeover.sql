@@ -169,30 +169,20 @@ ALTER TABLE `categories`
 
 ALTER TABLE `ratecard`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
---
--- AUTO_INCREMENT for table ``
---images
+
+
 ALTER TABLE `images`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 
---
--- AUTO_INCREMENT for table `newsletter`
---
 ALTER TABLE `newsletter`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 
---
--- AUTO_INCREMENT for table `form-data`
---
 ALTER TABLE `form-data`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 
---
--- AUTO_INCREMENT for table `courses`
---
 ALTER TABLE `courses`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;

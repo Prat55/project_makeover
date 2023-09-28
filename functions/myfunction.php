@@ -3,34 +3,39 @@
 include('../config/dbcon.php');
 
 //? fetching all tables from database
-function getAll($table){
+function getAll($table)
+{
     global $con;
     $query = "SELECT * FROM `$table`";
     return $query_run = mysqli_query($con, $query);
 }
 
-function getRev($table, $column){
+function getRev($table, $column)
+{
     global $con;
     $query = "SELECT * FROM `$table` ORDER BY `$column` DESC";
     return $query_run = mysqli_query($con, $query);
 }
 
 // ? For edit category from categories table
-function getCategory($table, $id){
+function getCategory($table, $id)
+{
     global $con;
     $query = "SELECT * FROM `$table` WHERE `id` = '$id'";
     return $query_run = mysqli_query($con, $query);
 }
 
 //? help to match specific service and id column from table 
-function getByService($table, $id, $service){
+function getByService($table, $id, $service)
+{
     global $con;
     $query = "SELECT * FROM `$table` WHERE `id` = '$id' AND `service` = '$service'";
     return $query_run = mysqli_query($con, $query);
 }
 
 // ?For reset auto increment
-function resetQuery($table){
+function resetQuery($table)
+{
     global $con;
     $reset_query1 = "SET @num = 0;";
     $reset_query2 = "UPDATE `$table` SET id = @num := (@num + 1);";
@@ -41,64 +46,60 @@ function resetQuery($table){
 }
 
 // ? Adding data to table category1,2,3,4
-function addCategory($tableName){
+function addCategory($tableName)
+{
     global $con;
     $category = $_POST['categories'];
 
     // Checking if the service is null or not
-    if($category == ""){
+    if ($category == "") {
         echo "<script>alert('Category is required');</script>";
     }
 
-    // Checking if the price is null or not
-    else if($price == ""){
-        echo "<script>alert('Price is required');</script>";
-    }
-
     // Inserting data in database
-    else{
+    else {
         resetQuery("$tableName");
 
         $cate_query = "INSERT INTO `$tableName`(`category`) VALUES ('$category')";
         $cate_query_run = mysqli_query($con, $cate_query);
 
-        if($cate_query_run){
+        if ($cate_query_run) {
             redirect("add-category.php", "success", "Category Added Successfully");
-        }
-        else{
+        } else {
             redirect("add-category.php", "error", "Something Went Wrong!");
         }
     }
 }
 
 // ?Updating data of table category1,2,3,4
-function updateCategory($tableName){
+function updateCategory($tableName)
+{
     global $con;
     $id = $_POST['id'];
     $category = $_POST['category'];
 
     // Checking if the service is null or not
-    if($category == ""){
+    if ($category == "") {
         echo "<script>alert('Category is required');</script>";
     }
     // Updating data in database
-    else{
+    else {
         resetQuery("$tableName");
-        
+
         $update_query = "UPDATE `$tableName` SET `category` = '$category' WHERE `id` = '$id'";
         $update_query_run = mysqli_query($con, $update_query);
 
-        if($update_query_run){
+        if ($update_query_run) {
             redirect("manage-category.php", "success", "Category Updated Successfully");
-        }
-        else{
+        } else {
             redirect("manage-category.php", "error", "Something Went Wrong!");
         }
     }
 }
 
 // ?Updating data of table category1,2,3,4
-function updateSubCategory($tableName){
+function updateSubCategory($tableName)
+{
     global $con;
     $id = $_POST['id'];
     $service = $_POST['service'];
@@ -106,68 +107,63 @@ function updateSubCategory($tableName){
     $price = $_POST['price'];
 
     // Checking if the service is null or not
-    if($service == ""){
+    if ($service == "") {
         echo "<script>alert('Service is required');</script>";
     }
     // Checking if the price is null or not
-    else if($price == ""){
+    else if ($price == "") {
         echo "<script>alert('Price is required');</script>";
     }
     // Updating data in database
-    else{
+    else {
         resetQuery("$tableName");
-        
+
         $update_query = "UPDATE `$tableName` SET `service` = '$service', `price` = '$price' WHERE `id` = '$id'";
         $update_query_run = mysqli_query($con, $update_query);
 
-        if($update_query_run){
+        if ($update_query_run) {
             redirect("all-category.php", "success", "Category Updated Successfully");
-        }
-        else{
+        } else {
             redirect("all-category.php", "error", "Something Went Wrong!");
         }
     }
 }
 
-function addCources($tableName){
+function addCources($tableName)
+{
     global $con;
     $course_name = $_POST['course-name'];
     $seats = $_POST['seats'];
 
     // Checking if the service is null or not
-    if($course_name == ""){
+    if ($course_name == "") {
         echo "<script>alert('Course name is required');</script>";
     }
 
     // Checking if the price is null or not
-    else if($seats == ""){
+    else if ($seats == "") {
         echo "<script>alert('Seats is required');</script>";
     }
 
     // Inserting data in database
-    else{
+    else {
         resetQuery("$tableName");
 
         $cate_query = "INSERT INTO `$tableName`(`course-name`, `seats`) VALUES ('$course_name','$seats')";
         $cate_query_run = mysqli_query($con, $cate_query);
 
-        if($cate_query_run){
-            redirect("add-course.php", "success", "Category Added Successfully");
-        }
-        else{
-            redirect("add-course.php", "error", "Something Went Wrong!");
+        if ($cate_query_run) {
+            redirect("add-course.php", "Category Added Successfully");
+        } else {
+            redirect("add-course.php", "Something Went Wrong!");
         }
     }
 }
 
 // use for redirecting to specific page
-function redirect($url, $mode, $message)
+function redirect($url, $message)
 {
-    $_session['message'] = $mode;
     $_SESSION['message'] = $message;
     header("Location: $url");
     exit();
 }
-
-
-?>
