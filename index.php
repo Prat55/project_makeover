@@ -518,7 +518,7 @@ include('functions/userfunction.php');
                     <div class="col-lg-6 mx-auto">
                         <div class="site-heading text-center">
                             <span class="site-title-tagline">pricing</span>
-                            <h2 class="site-title" style="color: white">
+                            <h2 class="site-title" style="color: black">
                                 Our pricing Plan For You
                             </h2>
                         </div>
