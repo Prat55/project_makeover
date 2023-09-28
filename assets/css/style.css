@@ -1635,7 +1635,8 @@ button.navbar-toggler:focus {
 }
 
 .service-item:hover .service-icon img {
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
+  scale: 1.1;
 }
 
 .service-arrow {
