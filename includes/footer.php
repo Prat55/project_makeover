@@ -21,10 +21,7 @@
                                 diamond hotel, Boisar, Maharashtra 401501
                             </li>
                             <li>
-                                <a
-                                    href="https://live.themewild.com/cdn-cgi/l/email-protection#335a5d555c73564b525e435f561d505c5e"><i
-                                        class="far fa-envelope"></i><span class="__cf_email__"
-                                        data-cfemail="3c55525a537c59445d514c5059125f5351">roshmakeover@gmail.com</span></a>
+                                <a href="https://live.themewild.com/cdn-cgi/l/email-protection#335a5d555c73564b525e435f561d505c5e"><i class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="3c55525a537c59445d514c5059125f5351">roshmakeover@gmail.com</span></a>
                             </li>
                         </ul>
                     </div>
@@ -70,7 +67,7 @@
                                 </p>
                                 <div class="subscribe-form">
                                     <form action="functions/newsubmit.php" method="post">
-                                        <input type="email" name="email" class="form-control" placeholder="Your Email" required/>
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
                                         <button class="theme-btn" type="submit" name="news-sub">
                                             Subscribe Now <i class="far fa-paper-plane"></i>
                                         </button>
@@ -90,8 +87,8 @@
                                     </div>
                                 <?php
                                     unset($_SESSION['message']);
-                                }   
-                                
+                                }
+
                                 ?>
                             </div>
                         </div>
@@ -107,11 +104,11 @@
                 <div class="col-md-6 align-self-center">
                     <p class="copyright-text">
                         &copy; Copyright <span id="date">2023</span>
-                        All Rights Reserved by 
+                        All Rights Reserved by
                         <a href="#">
-                            Rosh Makeover 
-                        </a> 
-                        & Designed and Developed by 
+                            Rosh Makeover
+                        </a>
+                        & Developed by
                         <a href="#">
                             Maestloper Media.
                         </a>
