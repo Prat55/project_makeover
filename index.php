@@ -1,5 +1,5 @@
-<?php 
-session_start();    
+<?php
+session_start();
 include('includes/header.php');
 include('functions/userfunction.php');
 ?>
@@ -12,21 +12,17 @@ include('functions/userfunction.php');
                     <div class="row align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">
+                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
                                     Welcome To Rosh Makeover!
                                 </h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".50s">
+                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".50s">
                                     Your premier destination for all your makeover needs.
                                 </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".75s">
+                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
                                     We are a dedicated team of professionals passionate about
                                     enhancing your beauty and transforming your appearance.
                                 </p>
-                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay="1s">
+                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                                     <a href="#" class="theme-btn">About More<i class="fas fa-long-arrow-right"></i></a>
                                     <a style="display: none !important" href="#" class="theme-btn theme-btn2">Learn
                                         More<i class="fas fa-long-arrow-right"></i></a>
@@ -41,23 +37,19 @@ include('functions/userfunction.php');
                     <div class="row align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">
+                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
                                     Welcome to Rosh Makeover !
                                 </h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".50s">
+                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".50s">
                                     We Provide Quality Makeup Services For <br />
                                     You
                                 </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".75s">
+                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
                                     With our expertise in the art of makeovers, we aim to
                                     empower individuals to feel confident, empowered, and
                                     beautiful in their own skin.
                                 </p>
-                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay="1s">
+                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                                     <a href="#" class="theme-btn">About More<i class="fas fa-long-arrow-right"></i></a>
                                     <a href="#" class="theme-btn theme-btn2" style="display: none !important">Learn
                                         More<i class="fas fa-long-arrow-right"></i></a>
@@ -72,22 +64,18 @@ include('functions/userfunction.php');
                     <div class="row align-items-center">
                         <div class="col-md-7 col-lg-7">
                             <div class="hero-content">
-                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp"
-                                    data-wow-duration="1s" data-wow-delay=".25s">
+                                <h6 class="hero-sub-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
                                     Welcome to Rosh Makeover !
                                 </h6>
-                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".50s">
+                                <h1 class="hero-title wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".50s">
                                     We Are a full fledged Makeover Academy <br />
                                     Also.
                                 </h1>
-                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay=".75s">
+                                <p class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".75s">
                                     We believe that beauty is an art form that can be learned
                                     and mastered by anyone with a passion for transformation.
                                 </p>
-                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s"
-                                    data-wow-delay="1s">
+                                <div class="hero-btn wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                                     <a href="#" class="theme-btn">About More<i class="fas fa-long-arrow-right"></i></a>
                                     <a href="#" class="theme-btn theme-btn2" style="display: none !important">Learn
                                         More<i class="fas fa-long-arrow-right"></i></a>
@@ -142,8 +130,7 @@ include('functions/userfunction.php');
                                 </li>
                             </ul>
                         </div>
-                        <a href="about.php" class="theme-btn mt-4">Discover More <i
-                                class="fas fa-long-arrow-right"></i></a>
+                        <a href="about.php" class="theme-btn mt-4">Discover More <i class="fas fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -334,8 +321,7 @@ include('functions/userfunction.php');
                             <img src="./images/portfolio/first.jfif" alt />
                         </div>
                         <div class="portfolio-content">
-                            <a class="popup-img portfolio-link" href="./images/portfolio/first.jfif"><i
-                                    class="far fa-plus"></i></a>
+                            <a class="popup-img portfolio-link" href="./images/portfolio/first.jfif"><i class="far fa-plus"></i></a>
                             <div class="portfolio-info">
                                 <h5 class="portfolio-subtitle"><span>//</span> Makeup</h5>
                                 <a href="#">
@@ -352,8 +338,7 @@ include('functions/userfunction.php');
                             <img src="./images/portfolio/second.jfif" alt />
                         </div>
                         <div class="portfolio-content">
-                            <a class="popup-img portfolio-link" href="./images/portfolio/second.jfif"><i
-                                    class="far fa-plus"></i></a>
+                            <a class="popup-img portfolio-link" href="./images/portfolio/second.jfif"><i class="far fa-plus"></i></a>
                             <div class="portfolio-info">
                                 <h5 class="portfolio-subtitle"><span>//</span> Makeup</h5>
                                 <a href="#">
@@ -370,8 +355,7 @@ include('functions/userfunction.php');
                             <img src="./images/portfolio/third.jfif" alt />
                         </div>
                         <div class="portfolio-content">
-                            <a class="popup-img portfolio-link" href="./images/portfolio/third.jfif"><i
-                                    class="far fa-plus"></i></a>
+                            <a class="popup-img portfolio-link" href="./images/portfolio/third.jfif"><i class="far fa-plus"></i></a>
                             <div class="portfolio-info">
                                 <h5 class="portfolio-subtitle"><span>//</span> Makeup</h5>
                                 <a href="#">
@@ -388,8 +372,7 @@ include('functions/userfunction.php');
                             <img src="images/portfolio/four.jfif" alt />
                         </div>
                         <div class="portfolio-content">
-                            <a class="popup-img portfolio-link" href="images/portfolio/four.jfif"><i
-                                    class="far fa-plus"></i></a>
+                            <a class="popup-img portfolio-link" href="images/portfolio/four.jfif"><i class="far fa-plus"></i></a>
                             <div class="portfolio-info">
                                 <h5 class="portfolio-subtitle"><span>//</span> Makeup</h5>
                                 <a href="#">
@@ -406,8 +389,7 @@ include('functions/userfunction.php');
                             <img src="./images/portfolio/five.jfif" alt />
                         </div>
                         <div class="portfolio-content">
-                            <a class="popup-img portfolio-link" href="./images/portfolio/five.jfif"><i
-                                    class="far fa-plus"></i></a>
+                            <a class="popup-img portfolio-link" href="./images/portfolio/five.jfif"><i class="far fa-plus"></i></a>
                             <div class="portfolio-info">
                                 <h5 class="portfolio-subtitle"><span>//</span> Makeup</h5>
                                 <a href="#">
@@ -424,8 +406,7 @@ include('functions/userfunction.php');
                             <img src="./images/portfolio/six.jfif" alt />
                         </div>
                         <div class="portfolio-content">
-                            <a class="popup-img portfolio-link" href="./images/portfolio/six.jfif"><i
-                                    class="far fa-plus"></i></a>
+                            <a class="popup-img portfolio-link" href="./images/portfolio/six.jfif"><i class="far fa-plus"></i></a>
                             <div class="portfolio-info">
                                 <h5 class="portfolio-subtitle"><span>//</span> Makeup</h5>
                                 <a href="#">
@@ -532,31 +513,31 @@ include('functions/userfunction.php');
                                 $categories_run = mysqli_query($con, $categories);
                                 $ratecard_run = mysqli_query($con, $ratecard);
 
-                                if(mysqli_num_rows($categories_run) > 0) {
-                                    foreach($categories_run as $category){
-                                    ?>
-                                <h2><?= $category['category'] ?></h2>
-
-                                <?php 
-                                if(mysqli_num_rows($ratecard_run)> 0) {
-                                    foreach($ratecard_run as $rate){
-                                        if(  $rate['category_id'] == $category['id']){
+                                if (mysqli_num_rows($categories_run) > 0) {
+                                    foreach ($categories_run as $category) {
                                 ?>
+                                        <h2><?= $category['category'] ?></h2>
 
-                                <li>
-                                    <p><?= $rate['service']; ?></p>
-                                    <span>Rs <?= $rate['price']; ?></span>
-                                </li>
-                                <?php
+                                        <?php
+                                        if (mysqli_num_rows($ratecard_run) > 0) {
+                                            foreach ($ratecard_run as $rate) {
+                                                if ($rate['category_id'] == $category['id']) {
+                                        ?>
+
+                                                    <li>
+                                                        <p><?= $rate['service']; ?></p>
+                                                        <span>Rs <?= $rate['price']; ?></span>
+                                                    </li>
+                                        <?php
+                                                }
                                             }
                                         }
-                                    }
                                         ?>
 
                                 <?php
                                     }
                                 }
-                            ?>
+                                ?>
                             </ul>
                         </div>
                     </div>
@@ -649,6 +630,100 @@ include('functions/userfunction.php');
                                 <h5><a href="#">Roshani Paswan</a></h5>
                                 <span>(Director & Founder)</span>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="container">
+            <div class="testimonial-slider owl-carousel owl-theme">
+                <div class="testimonial-single">
+                    <div class="testimonial-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        <span class="testimonial-quote-icon"><i class="flaticon-quote-hand-drawn-symbol"></i></span>
+                        <p>
+                            I felt like a superstar after the incredible makeover at Rosh
+                            Makeover. Flawless makeup and stunning hairstyling made me
+                            feel confident and beautiful.
+                        </p>
+                        <div class="testimonial-quote-icon">
+                            <img src="assets/img/icon/quote.svg" alt />
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-author-img">
+                            <img src="images/client/m1.jpg" alt />
+                        </div>
+                        <div class="testimonial-author-info">
+                            <h4>Arvind Yadav</h4>
+                            <p>Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-single">
+                    <div class="testimonial-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        <span class="testimonial-quote-icon"><i class="flaticon-quote-hand-drawn-symbol"></i></span>
+                        <p>
+                            The team at Rosh Makeover listened to my preferences and
+                            transformed me into the best version of myself. I walked out
+                            feeling pampered and confident"
+                        </p>
+                        <div class="testimonial-quote-icon">
+                            <img src="assets/img/icon/quote.svg" alt />
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-author-img">
+                            <img src="images/client/m2.jpg" alt />
+                        </div>
+                        <div class="testimonial-author-info">
+                            <h4>Jay Gajjar</h4>
+                            <p>Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-single">
+                    <div class="testimonial-rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-quote">
+                        <span class="testimonial-quote-icon"><i class="flaticon-quote-hand-drawn-symbol"></i></span>
+                        <p>
+                            Choosing roshmakeover for my bridal makeover was a fantastic
+                            decision. They made me feel like a princess on my special day.
+                        </p>
+                        <div class="testimonial-quote-icon">
+                            <img src="assets/img/icon/quote.svg" alt />
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="testimonial-author-img">
+                            <img src="images/client/m3.jpg" alt />
+                        </div>
+                        <div class="testimonial-author-info">
+                            <h4>Vikram Gupta</h4>
+                            <p>Clients</p>
                         </div>
                     </div>
                 </div>
@@ -753,35 +828,6 @@ include('functions/userfunction.php');
                         </div>
                     </div>
                 </div>
-                <!-- <div class="testimonial-single">
-              <div class="testimonial-rate">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="testimonial-quote">
-                <span class="testimonial-quote-icon"
-                  ><i class="flaticon-quote-hand-drawn-symbol"></i
-                ></span>
-                <p>
-                    They are very highly professional and very best at their service.
-                </p>
-                <div class="testimonial-quote-icon">
-                  <img src="assets/img/icon/quote.svg" alt />
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <div class="testimonial-author-img">
-                  <img src="assets/img/testimonial/04.jpg" alt />
-                </div>
-                <div class="testimonial-author-info">
-                  <h4>Parker Jimenez</h4>
-                  <p>Clients</p>
-                </div>
-              </div>
-            </div> -->
             </div>
         </div>
     </div>
@@ -792,17 +838,13 @@ include('functions/userfunction.php');
         </h1>
         <div class="container">
             <div class="partner-wrapper partner-slider owl-carousel owl-theme">
-                <img src="https://images.squarespace-cdn.com/content/v1/5fdb7673c69c455b9795a5dc/1609236162753-9DDL0X9ZZSLBHQTZ27U8/Lakme.png"
-                    alt="thumb" />
+                <img src="https://images.squarespace-cdn.com/content/v1/5fdb7673c69c455b9795a5dc/1609236162753-9DDL0X9ZZSLBHQTZ27U8/Lakme.png" alt="thumb" />
                 <img src="https://www.logogenie.net/images/articles/beauty-logo-9.jpg" alt="thumb" />
                 <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/30163533/big-768x591.png" alt="thumb" />
-                <img src="https://logos-world.net/wp-content/uploads/2020/11/Oriflame-Logo-2011-present.jpg"
-                    alt="thumb" />
-                <img src="https://marscosmetics.in/cdn/shop/files/1_6c204237-25ac-4f23-a759-c18515a90bd7.jpg?v=1615455746"
-                    alt="thumb" />
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/Oriflame-Logo-2011-present.jpg" alt="thumb" />
+                <img src="https://marscosmetics.in/cdn/shop/files/1_6c204237-25ac-4f23-a759-c18515a90bd7.jpg?v=1615455746" alt="thumb" />
                 <img src="https://www.ranklogos.com/wp-content/uploads/2012/06/olay-logo.png" alt="thumb" />
-                <img src="https://cdn.sanity.io/images/92ui5egz/production/7c1c60e9afaaaa3cce61e5101717796d21b7f914-1426x1080.svg?rect=0,141,1426,799&w=150&h=84&fit=crop&auto=format"
-                    alt="thumb" />
+                <img src="https://cdn.sanity.io/images/92ui5egz/production/7c1c60e9afaaaa3cce61e5101717796d21b7f914-1426x1080.svg?rect=0,141,1426,799&w=150&h=84&fit=crop&auto=format" alt="thumb" />
             </div>
         </div>
     </div>
