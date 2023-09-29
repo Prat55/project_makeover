@@ -546,7 +546,7 @@ include('functions/userfunction.php');
         </div>
     </main>
 
-    <div class="team-area theme-bg-dark-2 py-120">
+    <div class="team-area theme-bg-dark-2 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 mx-auto">
@@ -638,7 +638,7 @@ include('functions/userfunction.php');
         </div>
     </div>
 
-    <div class="">
+    <div class="py-5">
         <div class="container">
             <div class="testimonial-slider owl-carousel owl-theme">
                 <div class="testimonial-single">
